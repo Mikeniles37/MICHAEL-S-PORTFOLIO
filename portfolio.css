@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --main-color: #7cf03d;
+  --white-color: #fff;
+  --disabled-color: #fff3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--white-color);
+  background-color: var(--second-bg-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+nav a {
+  font-size: 2rem;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: 0.5s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 4rem;
+}
+
+.portfolio h2 {
+  margin-top: 9rem;
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.portfolio h2 span {
+  color: var(--main-color);
+}
+
+.portfolio-detail {
+  display: none;
+}
+
+.portfolio-detail.active {
+  display: block;
+}
+
+.portfolio-box .numb {
+  font-size: 8rem;
+  -webkit-text-stroke: 0.07rem var(--white-color);
+  color: transparent;
+  line-height: 1;
+  margin-left: 6rem;
+}
+
+.portfolio-box h3 {
+  font-size: 3.5rem;
+  margin: 0.8rem 0 2rem;
+  margin-left: 6rem;
+}
+
+.portfolio-box p {
+  font-size: 2rem;
+  margin-left: 7rem;
+}
+
+.portfolio-box .tech {
+  margin: 2rem 0;
+  color: var(--white-color);
+  border-bottom: 0.1rem solid var(--white-color);
+  padding-bottom: 2rem;
+  width: 44%;
+  margin-left: 6rem;
+}
+
+.tech p {
+  color: var(--main-color);
+}
+
+.portfolio-box .live-github a {
+  position: relative;
+  display: inline-flex;
+  padding: 1.3rem;
+  font-size: 3rem;
+  color: var(--white-color);
+  border-radius: 50%;
+  background: var(--bg-color);
+  transition: 0.5s;
+}
+
+.portfolio-box .live-github a:hover {
+  color: var(--main-color);
+}
+
+.portfolio-box .live-github a:first-child {
+  margin-right: 1.5rem;
+}
+
+.portfolio-box .live-github a:first-child i {
+  transform: rotate(135deg);
+}
+
+.portfolio-box .live-github a span {
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  pointer-events: none;
+  background: var(--white-color);
+  color: var(--bg-color);
+  opacity: 0;
+  scale: 0.9;
+  transition: 0.2ss;
+}
+
+.portfolio-box .live-github a:hover span {
+  top: -70%;
+  opacity: 1;
+  scale: 1;
+}
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+}
+/* ================================
+   PORTFOLIO CAROUSEL
+================================ */
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-slide {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.6s ease;
+}
+
+.img-item {
+  min-width: 32rem; /* controls visible size */
+  border-radius: 1.6rem;
+  overflow: hidden;
+  background: #000;
+}
+
+.img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================================
+   ARROWS
+================================ */
+.carousel-nav {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-nav button {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #22c55e;
+  background: transparent;
+  color: #22c55e;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-nav button:hover {
+  background: #22c55e;
+  color: #000;
+}
+
+footer .container {
+  background-color: var(--bg-color);
+  margin-top: 40rem;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col h4 {
+  color: var(--white-color);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  width: 7rem;
+  height: 0.2rem;
+  position: absolute;
+  background: var(--main-color);
+  bottom: -1rem;
+}
+
+.footer-col ul li {
+  padding: 1rem 0;
+}
+
+.footer-col ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 2rem;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--main-color);
+  opacity: 1.5;
+}
+
+.footer-col input {
+  border: none;
+  width: 25rem;
+  height: 4.5rem;
+  display: block;
+  padding-left: 2rem;
+  margin: 1.4rem 0;
+  font-size: 2rem;
+}
+
+.footer-col .inputsubmit {
+  padding: 0 2rem;
+  background-color: var(--main-color);
+  border: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.col p {
+  color: var(--white-color);
+  font-size: 2.5rem;
+}
+
+.footer .col a {
+  color: var(--white-color);
+}
+
+.row hr {
+  color: var(--white-color);
+}
+
+.row .social-icons {
+  border-radius: 50%;
+  margin-top: -1.4rem;
+}
+
+.row .social-icons i {
+  display: inline-flex;
+  padding: 0.8rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin: 0 0.8rem;
+  transition: 0.5s;
+}
+
+.row .social-icons i:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-line {
+  border: none;
+  border-top: 0.1rem solid var(--white-color);
+  margin: 3rem 0;
+}
+
+.row .col p a {
+  color: var(--white-color);
+  margin-left: 3rem;
+  font-size: 2.5rem;
+}
+
+.row .col p a:hover {
+  color: var(--main-color);
+}
+
+.row .col {
+  display: flex;
+  gap: 3rem;
+}

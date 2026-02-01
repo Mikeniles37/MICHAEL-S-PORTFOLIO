@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --main-color: #7cf03d;
+  --white-color: #fff;
+  --disabled-color: #fff3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--white-color);
+  background-color: var(--second-bg-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+nav a {
+  font-size: 2rem;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: 0.5s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 4rem;
+}
+
+h2 {
+  margin-top: 9rem;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 span {
+  color: var(--main-color);
+}
+
+.services-active {
+  padding: 4rem 9%;
+}
+
+.services-box h3 {
+  font-size: 3rem;
+  margin: 0.5rem 0 2rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  transition: 0.5s;
+}
+
+.services-box p {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.services-container .services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.services-box {
+  padding: 3rem 2.5rem;
+  background: var(--bg-color);
+  border: 0.2rem solid var(--second-bg-color);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: 0.5s;
+  height: calc((50 /) 3);
+}
+
+.services-box .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-box .icon i {
+  font-size: 4rem;
+}
+
+.services-box .icon a {
+  display: inline-flex;
+  background: var(--white-color);
+  border-radius: 50%;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+.services-box .icon a i {
+  font-size: 3rem;
+  color: var(--bg-color);
+  transform: rotate(225deg);
+}
+
+.services-box:hover .icon :not(a i) {
+  color: var(--main-color);
+  transition: 0.5s;
+}
+
+.services-box:hover .icon a {
+  background: var(--main-color);
+}
+
+.services-box:hover h3 {
+  color: var(--main-color);
+}
+
+.services-box .icon a:hover i {
+  transform: rotate(180deg);
+}
+
+footer .container {
+  background-color: var(--bg-color);
+  margin-top: 40rem;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col h4 {
+  color: var(--white-color);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  width: 7rem;
+  height: 0.2rem;
+  position: absolute;
+  background: var(--main-color);
+  bottom: -1rem;
+}
+
+.footer-col ul li {
+  padding: 1rem 0;
+}
+
+.footer-col ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 2rem;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--main-color);
+  opacity: 1.5;
+}
+
+.footer-col input {
+  border: none;
+  width: 25rem;
+  height: 4.5rem;
+  display: block;
+  padding-left: 2rem;
+  margin: 1.4rem 0;
+  font-size: 2rem;
+}
+
+.footer-col .inputsubmit {
+  padding: 0 2rem;
+  background-color: var(--main-color);
+  border: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.col p {
+  color: var(--white-color);
+  font-size: 2.5rem;
+}
+
+.footer .col a {
+  color: var(--white-color);
+}
+
+.row hr {
+  color: var(--white-color);
+}
+
+.row .social-icons {
+  border-radius: 50%;
+  margin-top: -1.4rem;
+}
+
+.row .social-icons i {
+  display: inline-flex;
+  padding: 0.8rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin: 0 0.8rem;
+  transition: 0.5s;
+}
+
+.row .social-icons i:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-line {
+  border: none;
+  border-top: 0.1rem solid var(--white-color);
+  margin: 3rem 0;
+}
+
+.row .col p a {
+  color: var(--white-color);
+  margin-left: 3rem;
+  font-size: 2.5rem;
+}
+
+.row .col p a:hover {
+  color: var(--main-color);
+}
+
+.row .col {
+  display: flex;
+  gap: 3rem;
+}

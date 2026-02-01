@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --main-color: #7cf03d;
+  --white-color: #fff;
+  --disabled-color: #fff3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--second-bg-color);
+  color: var(--white-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+nav a {
+  font-size: 2rem;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: 0.5s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 4rem;
+}
+
+.resume-box h2 {
+  margin-top: 10rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 8rem;
+}
+
+.resume-box p {
+  font-size: 2rem;
+  margin-left: 5rem;
+  line-height: 1.4;
+}
+
+.resume-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+}
+
+.resume-box .resume-btn {
+  width: 100%;
+  height: 7rem;
+  background: var(--bg-color);
+  border: 0.2rem solid var(--second-bg-color);
+  margin-left: 4rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.resume-box .resume-btn.active {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.resume-box .heading {
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+.resume-box h2 span {
+  color: var(--main-color);
+}
+
+.resume-detail {
+  display: none;
+}
+
+.resume-detail.active {
+  display: block;
+}
+
+.resume-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  height: 45rem;
+  overflow: auto;
+}
+
+.resume-list .resume-item {
+  margin-top: 7rem;
+  background: var(--bg-color);
+  margin-right: 3rem;
+  border-radius: 0.8rem;
+  padding: 3rem 2.5rem;
+  height: calc((45rem - 2rem) / 2);
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resume-item .year {
+  color: var(--main-color);
+}
+
+.resume-item h3 {
+  font-size: 2.5rem;
+}
+
+.resume-item .company {
+  position: relative;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resume-item .company::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  margin-left: -2rem;
+}
+
+.resume-list::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.resume-list::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 1rem;
+}
+
+.resume-list:hover::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+.skills-wrapper {
+  margin-top: 40px;
+}
+.skills-title {
+  font-size: 22px;
+  margin: 30px 0 15px;
+}
+
+.skill {
+  margin-bottom: 12px;
+}
+.skill span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.bar {
+  background: #eaeaea;
+  height: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  border-radius: 20px;
+  animation: load 2s forwards;
+}
+
+.progress.html {
+  width: 95%;
+  background: #e34c26;
+}
+.progress.css {
+  width: 90%;
+  background: #264de4;
+}
+.progress.js {
+  width: 85%;
+  background: #f0db4f;
+}
+.progress.node {
+  width: 80%;
+  background: #3c873a;
+}
+.progress.express {
+  width: 75%;
+  background: #333;
+}
+.progress.react {
+  width: 80%;
+  background: #61dafb;
+}
+.progress.vue {
+  width: 70%;
+  background: #42b883;
+}
+.progress.tailwind {
+  width: 85%;
+  background: #38bdf8;
+}
+.progress.php {
+  width: 75%;
+  background: #777bb3;
+}
+.progress.python {
+  width: 80%;
+  background: #3776ab;
+}
+.progress.mongo {
+  width: 75%;
+  background: #4db33d;
+}
+.progress.mysql {
+  width: 80%;
+  background: #00758f;
+}
+.progress.bcrypt {
+  width: 70%;
+  background: #ff9800;
+}
+.progress.oauth {
+  width: 65%;
+  background: #9c27b0;
+}
+.progress.aws {
+  width: 60%;
+  background: #ff9900;
+}
+.progress.azure {
+  width: 55%;
+  background: #0078d4;
+}
+
+@keyframes load {
+  from {
+    width: 0;
+  }
+}
+
+/* SOFT SKILLS */
+.soft-skills {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 120px;
+  height: 150px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.circle svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.circle circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.circle circle:first-child {
+  stroke: #eee;
+}
+.circle circle:last-child {
+  stroke: #00bcd4;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 2s;
+}
+/* ================================
+   SKILLS SECTION
+================================ */
+.skills-wrapper {
+  margin-top: 3rem; /* 30px */
+}
+
+/* ---------- HARD SKILLS ---------- */
+.skill {
+  margin-bottom: 1.8rem; /* 18px */
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.1rem; /* 14px */
+  font-weight: 700;
+  margin-bottom: 0.6rem; /* 6px */
+}
+
+.skill-name:hover {
+  color: var(--main-color);
+}
+
+.skill-bar {
+  width: 100%;
+  height: 0.8rem; /* 8px */
+  background: #1e293b;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0;
+  background: var(--main-color);
+  border-radius: 2rem;
+  transition: width 1.4s ease-in-out;
+}
+
+/* ---------- SOFT SKILLS ---------- */
+.soft-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 3rem; /* 30px */
+  margin-top: 5rem; /* 50px */
+  text-align: center;
+}
+
+.soft-skill p {
+  margin-top: 1rem; /* 10px */
+  font-size: 1.4rem; /* 14px */
+  font-weight: 500;
+}
+
+/* ================================
+   CIRCULAR SOFT SKILLS
+================================ */
+.soft-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 3rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.soft-skill p {
+  margin-top: 1rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.soft-skill p:hover {
+  color: var(--main-color);
+}
+
+/* ---------- CIRCLE WRAPPER ---------- */
+.circle {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  margin: 0 auto;
+}
+
+/* ---------- SVG ---------- */
+.circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+/* ---------- CIRCLE STROKES ---------- */
+.circle circle {
+  fill: none;
+  stroke-width: 1rem;
+  stroke-linecap: round;
+}
+
+/* Background ring */
+.circle .bg {
+  stroke: #1e293b;
+}
+
+/* Progress ring */
+.circle .progress {
+  stroke: #38bdf8;
+  stroke-dasharray: 339.29;
+  stroke-dashoffset: 339.29;
+  transition: stroke-dashoffset 1.5s ease;
+}
+
+/* ---------- PERCENT TEXT ---------- */
+.circle span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.resume-detail.about .resume-list {
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.resume-detail.about .resume-item {
+  height: auto;
+  padding: 0 0 0.5rem;
+  background: transparent;
+}
+
+.resume-detail.about .resume-item p {
+  color: var(--main-color);
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.resume-detail.about .resume-item p span {
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 76.8rem) {
+  /* 768px */
+  .skill-name {
+    font-size: 1.3rem;
+  }
+  .circle {
+    width: 10rem; /* 100px */
+    height: 10rem;
+  }
+  .circle svg {
+    width: 10rem;
+    height: 10rem;
+  }
+}
