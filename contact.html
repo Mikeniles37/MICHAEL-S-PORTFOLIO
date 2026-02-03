@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="contact.css" />
-    <i class="bx bx-menu" id="menu-icon"></i>
   </head>
   <body>
     <header>
@@ -24,54 +23,88 @@
       </nav>
     </header>
 
-    <!-----Contact Section------>
-    <section class="contact-active">
-      <div class="contact-container">
-        <!------Left Side-->
-        <div class="contact-box">
-          <h2>Let's Work Together</h2>
-          <p class="desc"></p>
+    <section class="contact-section">
+      <div class="contact-header">
+        <h2>Let’s Bridge Tech & Science Together</h2>
+        <p>
+          With a background in both full-stack software development and
+          analytical chemistry, I specialize in building tools that support
+          research, automation, and data-driven decision-making.
+        </p>
+        <p>
+          If you're looking for someone who understands both the science and the
+          code — let’s connect.
+        </p>
+      </div>
 
-          <div class="contact-details">
-            <i class="bx bxs-phone"></i>
-            <div class="detail">
-              <p>Phone</p>
-              <p>(+254)721870629</p>
-            </div>
+      <div class="contact-card">
+        <!-- LEFT SIDE -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><i class="bx bxs-phone"></i> Phone: +255 691368141</p>
+          <p><i class="bx bxs-envelope"></i> Email: mikeniles37@gmail.com</p>
+          <p><i class="bx bxs-location-plus"></i> Address: Tarime, Tanzania</p>
+
+          <h4>Connect With Me</h4>
+          <div class="social-links">
+            <a href="https://github.com/Mikeniles37"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://wa.me/+255691368141"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+            <a href="https://t.me/Michae Odhiambo"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+            <a href="https://www.instagram.com/mikeniles37/?hl=en"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/mike-niles-459b873a9/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://www.youtube.com/@MikeNiles3708"
+              ><i class="bx bxl-youtube"></i
+            ></a>
           </div>
 
-          <div class="contact-details">
-            <i class="bx bxs-envelope"></i>
-            <div class="detail">
-              <p>Email</p>
-              <p>mikemichel@gmail.com</p>
-            </div>
-          </div>
-
-          <div class="contact-details">
-            <i class="bx bx-current-location"></i>
-            <div class="detail">
-              <p>Location</p>
-              <p>Tarime</p>
-            </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15954.885444166724!2d34.36449175370482!3d-1.3435885017726343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stz!4v1770063609537!5m2!1sen!2stz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
 
-        <!------Right side---->
-        <div class="contact-box2">
-          <form action="">
-            <h2 class="heading">Contact <span>Me!</span></h2>
-
-            <div class="field-box">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Email Address" required />
-              <input type="text" placeholder="Phone Number" required />
-              <input type="text" placeholder="Email Subject" required />
-              <textarea placeholder="Your Messsage" required></textarea>
+        <!-- RIGHT SIDE -->
+        <div class="contact-form">
+          <h3>Send Me a Message</h3>
+          <form>
+            <div class="form-row">
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
             </div>
 
-            <button type="submit" class="btn">Send Message</button>
-            <button type="reset" class="btn2">Reset</button>
+            <input type="email" placeholder="Email Address" required />
+            <input
+              type="tel"
+              placeholder="Telephone number e.g. +255 XXXXXXXXX"
+              required
+            />
+
+            <!-- Country dropdown will be populated by JS -->
+            <select id="country-select" name="country" required>
+              <option value="" disabled selected>Select Country</option>
+            </select>
+
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn-send">Send Message</button>
+            <button type="reset" class="btn-reset">Reset</button>
           </form>
         </div>
       </div>
@@ -144,20 +177,42 @@
         <div class="row">
           <div class="col">
             <p>&#169; 2025 Michael. All Rights Reserved</p>
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Terms & Conditions</a></p>
+            <p>
+              <a href="DOCUMENTS/Privacy Policy-WPS Office.docx"
+                >Privacy Policy</a
+              >
+            </p>
+            <p>
+              <a href="DOCUMENTS/Terns and conditions .docx"
+                >Terms & Conditions</a
+              >
+            </p>
           </div>
 
           <div class="social-icons">
-            <a href="#"><i class="bx bxl-github"></i></a>
-            <a href="#"><i class="bx bxl-whatsapp"></i></a>
-            <a href="#"><i class="bx bxl-telegram"></i></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-linkedin"></i></a>
-            <a href="#"><i class="bx bxl-youtube"></i></a>
+            <a href="https://github.com/Mikeniles37"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://wa.me/+255691368141"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+            <a href="https://t.me/Michae Odhiambo"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+            <a href="https://www.instagram.com/mikeniles37/?hl=en"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/mike-niles-459b873a9/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://www.youtube.com/@MikeNiles3708"
+              ><i class="bx bxl-youtube"></i
+            ></a>
           </div>
         </div>
       </div>
     </footer>
+    <!-- JS to populate countries -->
+    <script src="contact.js"></script>
   </body>
 </html>

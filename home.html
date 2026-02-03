@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,63 +11,104 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
-      <a href="#" class="logo">Michael</a>
+      <a href="#" class="logo" data-en="Michael" data-sw="Michael">Michael</a>
+
       <i class="bx bx-menu" id="menu-icon"></i>
+
       <nav>
-        <a href="home.html" class="active">Home</a>
-        <a href="services.html">Services</a>
-        <a href="resume.html">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <a href="home.html" class="active" data-en="Home" data-sw="Nyumbani"
+          >Home</a
+        >
+        <a href="services.html" data-en="Services" data-sw="Huduma">Services</a>
+        <a href="resume.html" data-en="Resume" data-sw="Wasifu">Resume</a>
+        <a href="portfolio.html" data-en="Portfolio" data-sw="Kazi"
+          >Portfolio</a
+        >
+        <a href="contact.html" data-en="Contact" data-sw="Mawasiliano"
+          >Contact</a
+        >
       </nav>
+
+      <select id="languageSelect" class="lang-select">
+        <option value="en">English</option>
+        <option value="sw">Kiswahili</option>
+      </select>
     </header>
 
-    <!------Home Section------>
+    <!-- HOME -->
     <section class="home">
       <div class="home-details">
-        <h1>Michael Oscar</h1>
-        <h2>
-          I am a
-          <span style="--i: 6" data text="Full-Stack Software Developer"
+        <h1 data-en="Michael Oscar" data-sw="Michael Oscar">Michael Oscar</h1>
+
+        <h2 class="animated-text">
+          <span data-en="I'm a" data-sw="Mimi ni">I'm a</span>
+          <span
+            style="--i: 4"
+            data-en="Full-Stack Software Developer"
+            data-sw="Msanidi Programu wa Full-Stack"
             >Full-Stack Software Developer</span
           >
-          <span style="--i: 5" data text="UI/UX Designer">UI/UX Designer</span>
-          <span style="--i: 4" data text="Web Designer">Web Designer</span>
-          <span style="--i: 3" data text="Backend Developer"
-            >Backend Developer</span
+          <span
+            style="--i: 3"
+            data-en="Data Analyst"
+            data-sw="Mchambuzi wa Takwimu"
+            >Data Analyst</span
           >
-          <span style="--i: 2" data text="Data Analyst">Data Analyst</span>
-          <span style="--i: 1" data text="Analytical Chemist"
+          <span
+            style="--i: 2"
+            data-en="Web Designer"
+            data-sw="Mbunifu wa Tovuti"
+            >Web Designer</span
+          >
+          <span
+            style="--i: 1"
+            data-en="Analytical Chemist"
+            data-sw="Mkemia wa Uchambuzi"
             >Analytical Chemist</span
           >
         </h2>
-        <p>
-          I am a professional Full-Stack Software Developer with 3 years<br />
-          of hands-on experience in building modern, responsive, and user<br />-friendly
-          web applications. I work across both frontend and backend<br />
-          technologies focusing on clean code<br /><br />
-          With a strong background in Analytical Chemistry, I bring a unique<br />
-          problem-solving approach to software development. I enjoy turning<br />
-          complex ideas into efficient digital solutions and continuosly
-          improving<br />
-          my skills by exploring new technologies
+
+        <p
+          data-en="I am a professional Full-Stack Software Developer with 3 years of hands-on experience in building modern, responsive and user-friendly web applications."
+          data-sw="Mimi ni Msanidi Programu wa Full-Stack mwenye uzoefu wa miaka 3 katika kutengeneza tovuti za kisasa, rafiki kwa mtumiaji na zinazojibu vizuri."
+        >
+          I am a professional Full-Stack Software Developer with 3 years of
+          hands-on experience in building modern, responsive and user-friendly
+          web applications.
         </p>
+
         <div class="btn-sci">
-          <a href="#" class="btn">Download Cv</a>
-          <a href="#" class="btn2" id="hireMeBtn">Hire Me</a>
+          <a href="#" class="btn" data-en="Download CV" data-sw="Pakua Wasifu"
+            >Download CV</a
+          >
+          <a href="#" class="btn2" data-en="Hire Me" data-sw="Niajiri"
+            >Hire Me</a
+          >
           <div class="sci">
-            <a href="#"><i class="bx bxl-github"></i></a>
-            <a href="#"><i class="bx bxl-whatsapp"></i></a>
-            <a href="#"><i class="bx bxl-telegram"></i></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
-            <a href="#"><i class="bx bxl-youtube"></i></a>
+            <a href="https://github.com/Mikeniles37"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://wa.me/+255691368141"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
+            <a href="https://t.me/Michae Odhiambo"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+            <a href="https://www.instagram.com/mikeniles37/?hl=en"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/mike-niles-459b873a9/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://www.youtube.com/@MikeNiles3708"
+              ><i class="bx bxl-youtube"></i
+            ></a>
           </div>
         </div>
       </div>
-
       <div class="home-img">
         <div class="img-box">
           <div class="img-item">
@@ -77,94 +118,149 @@
       </div>
     </section>
 
-    <!-----What I Do Section----->
+    <!-- WHAT I DO -->
     <section id="what-i-do">
-      <h2 class="section-title">What I Do</h2>
+      <h2 class="section-title" data-en="What I Do" data-sw="Ninachofanya">
+        What I Do
+      </h2>
 
       <div class="what-grid">
-        <a href="#" class="what-card">
-          <h3>Full-Stack Software Developement</h3>
-          <p>
-            Building scalable and robust web applications tailored to your needs
+        <div class="what-card">
+          <h3
+            data-en="Full-Stack Development"
+            data-sw="Uendelezaji wa Full-Stack"
+          >
+            Full-Stack Development
+          </h3>
+          <p
+            data-en="Building scalable web applications"
+            data-sw="Kutengeneza mifumo inayokua"
+          >
+            Building scalable web applications
           </p>
-        </a>
+        </div>
 
-        <a href="#" class="what-card">
-          <h3>Analytical Chemistry</h3>
-          <p>
-            Data-driven chemical analysis and solutions for research and
-            industry.
+        <div class="what-card">
+          <h3 data-en="Analytical Chemistry" data-sw="Kemia ya Uchambuzi">
+            Analytical Chemistry
+          </h3>
+          <p
+            data-en="Data-driven chemical analysis"
+            data-sw="Uchambuzi wa kemikali kwa takwimu"
+          >
+            Data-driven chemical analysis
           </p>
-        </a>
+        </div>
 
-        <a href="google.com" class="what-card">
-          <h3>Design & Graphics</h3>
-          <p>Modern UI/UX and graphics designs that elevate user experience</p>
-        </a>
-
-        <a href="#" class="what-card">
-          <h3>Web Security / SEO</h3>
-          <p>
-            Security applications and improving visibility with best SEO
-            practices
+        <div class="what-card">
+          <h3 data-en="UI/UX Design" data-sw="Ubunifu wa UI/UX">
+            UI/UX Design
+          </h3>
+          <p
+            data-en="Modern and clean designs"
+            data-sw="Miundo ya kisasa na safi"
+          >
+            Modern and clean designs
           </p>
-        </a>
+        </div>
+
+        <div class="what-card">
+          <h3 data-en="Web Security & SEO" data-sw="Usalama wa Tovuti & SEO">
+            Web Security & SEO
+          </h3>
+          <p
+            data-en="Secure and optimized websites"
+            data-sw="Tovuti salama na zilizo boreshwa"
+          >
+            Secure and optimized websites
+          </p>
+        </div>
       </div>
     </section>
 
-    <!----Testimonials---->
+    <!-- TESTIMONIALS -->
     <section id="testimonials">
-      <h2 class="section-title">What Clients Say</h2>
+      <h2
+        class="section-title"
+        data-en="What Clients Say"
+        data-sw="Maoni ya Wateja"
+      >
+        What Clients Say
+      </h2>
 
       <div class="card-grid">
+        <!-- CARD 1 -->
         <div class="card">
-          <p>
-            Michael delivered a fast, secure and beautifully designed website.
-            Communication was clear throughut, and the final result exceeded our
-            expectations.
+          <p
+            data-en="Michael delivered a fast, secure, and beautifully designed website. Communication was clear throughout, and the final result exceeded our expectations."
+            data-sw="Michael alitengeneza tovuti ya haraka, salama na yenye muonekano mzuri. Mawasiliano yalikuwa mazuri na matokeo yalizidi matarajio yetu."
+          >
+            Michael delivered a fast, secure, and beautifully designed website.
+            Communication was clear throughout, and the final result exceeded
+            our expectations.
           </p>
-          <span class="author">Sarah Johnson, Startup Founder</span>
+          <span
+            class="author"
+            data-en="Sarah Johnson, Startup Founder"
+            data-sw="Sarah Johnson, Mwanzilishi wa Biashara"
+          >
+            Sarah Johnson, Startup Founder
+          </span>
         </div>
 
+        <!-- CARD 2 -->
         <div class="card">
-          <p>
+          <p
+            data-en="His full-stack expertise helped us scale our platform efficiently. Performance, security, and user experience were handled with precision."
+            data-sw="Ujuzi wake wa full-stack ulitusaidia kukuza mfumo wetu kwa ufanisi. Utendaji, usalama na uzoefu wa mtumiaji vilizingatiwa kwa umakini."
+          >
             His full-stack expertise helped us scale our platform efficiently.
-            Performance, security, and UX were handled with precision
+            Performance, security, and user experience were handled with
+            precision.
           </p>
-          <span class="author">Rodgers Miller, Product Manager</span>
+          <span
+            class="author"
+            data-en="Rodgers Miller, Product Manager"
+            data-sw="Rodgers Miller, Meneja wa Bidhaa"
+          >
+            Rodgers Miller, Product Manager
+          </span>
         </div>
 
+        <!-- CARD 3 -->
         <div class="card">
-          <p>
-            Outstanding Analytical Chemistry skills. The insights provided were
-            critical to our research success and data accuracy
+          <p
+            data-en="Outstanding analytical chemistry skills. The insights provided were critical to our research success and data accuracy."
+            data-sw="Ujuzi wake wa kemia ya uchambuzi ulikuwa wa hali ya juu. Taarifa alizotoa zilikuwa muhimu sana kwa mafanikio ya utafiti wetu."
+          >
+            Outstanding analytical chemistry skills. The insights provided were
+            critical to our research success and data accuracy.
           </p>
-          <span class="author">Dr Emilly Smith, Startup Founder</span>
+          <span
+            class="author"
+            data-en="Dr. Emily Smith, Research Scientist"
+            data-sw="Dkt. Emily Smith, Mtafiti wa Sayansi"
+          >
+            Dr. Emily Smith, Research Scientist
+          </span>
         </div>
 
+        <!-- CARD 4 -->
         <div class="card">
-          <p>
-            His full-stack expertise helped us scale our platform efficiently.
-            Performance and accuracy were handled with precision
+          <p
+            data-en="Modern design, clean code, and SEO-friendly implementation. Our website traffic and engagement improved significantly."
+            data-sw="Ubunifu wa kisasa, msimbo safi na utekelezaji mzuri wa SEO. Idadi ya watembeleaji wa tovuti yetu iliongezeka kwa kiasi kikubwa."
+          >
+            Modern design, clean code, and SEO-friendly implementation. Our
+            website traffic and engagement improved significantly.
           </p>
-          <span class="author">Sarah Johnson, Startup Founder</span>
-        </div>
-
-        <div class="card">
-          <p>
-            Modern design, clean code, and SEO-friendly implementation. Our site
-            traffic and engagement improved significantly
-          </p>
-          <span class="author">Alex Brown, Marketting Lead</span>
-        </div>
-
-        <div class="card">
-          <p>
-            Michael delivered a fast, secure and beautifully designed website.
-            Communication was clear throughut, and the final result exceeded our
-            expectations.
-          </p>
-          <span class="author">Sarah Johnson, Startup Founder</span>
+          <span
+            class="author"
+            data-en="Alex Brown, Marketing Lead"
+            data-sw="Alex Brown, Kiongozi wa Masoko"
+          >
+            Alex Brown, Marketing Lead
+          </span>
         </div>
       </div>
     </section>
@@ -172,108 +268,211 @@
     <footer>
       <div class="container">
         <div class="row">
+          <!-- COLUMN 1 -->
           <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <!------Second Column--->
-          <div class="footer-col">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">SEO</a></li>
-              <li><a href="#">Backend Developement</a></li>
-              <li><a href="#">Web Security</a></li>
-              <li><a href="#">Full-Stack Developement</a></li>
-              <li><a href="#">Mobile Apps</a></li>
-              <li><a href="#">Design & Graphics</a></li>
-            </ul>
-          </div>
-
-          <!-----Third Column-->
-          <div class="footer-col">
-            <h4>Contact</h4>
+            <h4 data-en="Quick Links" data-sw="Viungo Muhimu">Quick Links</h4>
             <ul>
               <li>
-                <a href="#"><i class="bx bxs-phone">+255691368141</i></a>
+                <a href="home.html" data-en="Home" data-sw="Nyumbani">Home</a>
               </li>
               <li>
-                <a href="#"
-                  ><i class="bx bxs-envelope"> Mikeniles37@gmail.com</i></a
+                <a href="services.html" data-en="Services" data-sw="Huduma"
+                  >Services</a
                 >
               </li>
               <li>
-                <a href="#"
-                  ><i class="bx bx-current-location"> Tanzania, Tarime</i></a
+                <a href="resume.html" data-en="Resume" data-sw="Wasifu"
+                  >Resume</a
                 >
               </li>
-              <li><a href="#">Availability: 8:00 AM - 10:00 PM</a></li>
+              <li>
+                <a href="portfolio.html" data-en="Portfolio" data-sw="Kazi"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" data-en="Contact" data-sw="Mawasiliano"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
 
-          <!-----Fourth Column----->
+          <!-- COLUMN 2 -->
           <div class="footer-col">
-            <h4>Newsletter</h4>
-            <form action="">
-              <input type="text" placeholder="Your Name" class="inputname" />
+            <h4 data-en="Services" data-sw="Huduma">Services</h4>
+            <ul>
+              <li data-en="Web Design" data-sw="Ubunifu wa Tovuti">
+                Web Design
+              </li>
+              <li data-en="SEO" data-sw="SEO">SEO</li>
+              <li
+                data-en="Backend Development"
+                data-sw="Uendelezaji wa Backend"
+              >
+                Backend Development
+              </li>
+              <li data-en="Web Security" data-sw="Usalama wa Tovuti">
+                Web Security
+              </li>
+              <li
+                data-en="Full-Stack Development"
+                data-sw="Uendelezaji wa Full-Stack"
+              >
+                Full-Stack Development
+              </li>
+              <li data-en="Mobile Apps" data-sw="Programu za Simu">
+                Mobile Apps
+              </li>
+              <li data-en="Design & Graphics" data-sw="Ubunifu na Michoro">
+                Design & Graphics
+              </li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 3 -->
+          <div class="footer-col">
+            <h4 data-en="Contact" data-sw="Mawasiliano">Contact</h4>
+            <ul>
+              <li>
+                <i class="bx bxs-phone"></i>
+                <span
+                  data-en="Phone: +255691368141"
+                  data-sw="Simu: +255691368141"
+                >
+                  Phone: +255691368141
+                </span>
+              </li>
+              <li>
+                <i class="bx bxs-envelope"></i>
+                <span
+                  data-en="Email: mikeniles37@gmail.com"
+                  data-sw="Barua Pepe: mikeniles37@gmail.com"
+                >
+                  Email: mikeniles37@gmail.com
+                </span>
+              </li>
+              <li>
+                <i class="bx bx-current-location"></i>
+                <span
+                  data-en="Location: Tanzania, Tarime"
+                  data-sw="Mahali: Tanzania, Tarime"
+                >
+                  Location: Tanzania, Tarime
+                </span>
+              </li>
+              <li
+                data-en="Availability: 8:00 AM - 10:00 PM"
+                data-sw="Upatikanaji: 8:00 Asubuhi - 10:00 Jioni"
+              >
+                Availability: 8:00 AM - 10:00 PM
+              </li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 4 -->
+          <div class="footer-col">
+            <h4 data-en="Newsletter" data-sw="Jarida">Newsletter</h4>
+            <form>
+              <input
+                type="text"
+                class="inputname"
+                data-en-placeholder="Your Name"
+                data-sw-placeholder="Jina Lako"
+                placeholder="Your Name"
+              />
               <input
                 type="email"
-                placeholder="Enter Your Email"
                 class="inputemail"
+                data-en-placeholder="Enter Your Email"
+                data-sw-placeholder="Weka Barua Pepe"
+                placeholder="Enter Your Email"
               />
-              <input type="submit" value="Submit" class="inputsubmit" />
+              <input
+                type="submit"
+                class="inputsubmit"
+                data-en="Submit"
+                data-sw="Wasilisha"
+                value="Submit"
+              />
             </form>
           </div>
         </div>
+
         <hr class="footer-line" />
+
         <div class="row">
           <div class="col">
-            <p>&#169; 2025 Michael. All Rights Reserved</p>
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Terms & Conditions</a></p>
+            <p
+              data-en="© 2025 Michael. All Rights Reserved"
+              data-sw="© 2025 Michael. Haki zote zimehifadhiwa"
+            >
+              © 2025 Michael. All Rights Reserved
+            </p>
+
+            <p>
+              <a
+                href="DOCUMENTS/Privacy Policy-WPS Office.docx"
+                data-en="Privacy Policy"
+                data-sw="Sera ya Faragha"
+                >Privacy Policy</a
+              >
+            </p>
+
+            <p>
+              <a
+                href="DOCUMENTS/Terns and conditions .docx"
+                data-en="Terms & Conditions"
+                data-sw="Sheria na Masharti"
+                >Terms & Conditions</a
+              >
+            </p>
           </div>
 
           <div class="social-icons">
-            <a href="#"><i class="bx bxl-github"></i></a>
-            <a href="#"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://github.com/Mikeniles37"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://wa.me/255691368141"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
             <a href="#"><i class="bx bxl-telegram"></i></a>
             <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
             <a href="#"><i class="bx bxl-youtube"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
-    <!------Contact Popup Modal---->
-    <div id="contactmodal" class="contact-modal">
-      <div class="contact-modal-content">
-        <span class="contact-close">&times;</span>
+    <!-- FOOTER -->
 
-        <div class="contact-box2">
-          <form action="">
-            <h2 class="heading">Contact <span>Me</span></h2>
+    <!-- ================= INLINE TRANSLATION SCRIPT ================= -->
+    <script>
+      (function () {
+        const select = document.getElementById("languageSelect");
 
-            <div class="field-box">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Email Address" required />
-              <input type="text" placeholder="Phone Number" required />
-              <input type="text" placeholder="Email Subject" required />
-              <textarea placeholder="Your Message" required></textarea>
-              <button type="submit" class="btn">Send Message</button>
-              <button type="reset" class="btn2">Reset</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <script src="contact-modal.js"></script>
+        let lang =
+          localStorage.getItem("lang") ||
+          (navigator.language.startsWith("sw") ? "sw" : "en");
+
+        select.value = lang;
+
+        function translate(language) {
+          document.querySelectorAll("[data-en]").forEach((el) => {
+            el.textContent = el.getAttribute("data-" + language);
+          });
+
+          document.documentElement.lang = language;
+          localStorage.setItem("lang", language);
+        }
+
+        translate(lang);
+
+        select.addEventListener("change", function () {
+          translate(this.value);
+        });
+      })();
+    </script>
   </body>
 </html>

@@ -397,6 +397,7 @@ nav a.active {
   width: 12rem;
   height: 12rem;
   margin: 0 auto;
+  margin-top: 8rem;
 }
 
 /* ---------- SVG ---------- */
@@ -459,6 +460,150 @@ nav a.active {
   font-size: 2rem;
   font-weight: 600;
 }
+
+.skill h3 {
+  font-size: 3rem;
+  margin-left: 50rem;
+  text-decoration: underline;
+  margin-top: 4rem;
+}
+
+.skill h3:hover {
+  color: var(--main-color);
+}
+
+.soft-skills h3 {
+  font-size: 3rem;
+  margin-left: 40rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
+.soft-skills h3:hover {
+  color: var(--main-color);
+}
+footer .container {
+  background-color: var(--bg-color);
+  margin-top: 10rem;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col h4 {
+  color: var(--white-color);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  width: 7rem;
+  height: 0.2rem;
+  position: absolute;
+  background: var(--main-color);
+  bottom: -1rem;
+}
+
+.footer-col ul li {
+  padding: 1rem 0;
+}
+
+.footer-col ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 2rem;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--main-color);
+  opacity: 1.5;
+}
+
+.footer-col input {
+  border: none;
+  width: 25rem;
+  height: 4.5rem;
+  display: block;
+  padding-left: 2rem;
+  margin: 1.4rem 0;
+  font-size: 2rem;
+}
+
+.footer-col .inputsubmit {
+  padding: 0 2rem;
+  background-color: var(--main-color);
+  border: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.col p {
+  color: var(--white-color);
+  font-size: 2.5rem;
+}
+
+.footer .col a {
+  color: var(--white-color);
+}
+
+.row hr {
+  color: var(--white-color);
+}
+
+.row .social-icons {
+  border-radius: 50%;
+  margin-top: -1.4rem;
+}
+
+.row .social-icons i {
+  display: inline-flex;
+  padding: 0.8rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin: 0 0.8rem;
+  transition: 0.5s;
+}
+
+.row .social-icons i:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-line {
+  border: none;
+  border-top: 0.1rem solid var(--white-color);
+  margin: 3rem 0;
+}
+
+.row .col p a {
+  color: var(--white-color);
+  margin-left: 3rem;
+  font-size: 2.5rem;
+}
+
+.row .col p a:hover {
+  color: var(--main-color);
+}
+
+.row .col {
+  display: flex;
+  gap: 3rem;
+}
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 76.8rem) {
   /* 768px */

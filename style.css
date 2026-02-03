@@ -57,6 +57,7 @@ nav a.active {
 
 #menu-icon {
   font-size: 4rem;
+  display: none;
 }
 
 .home {
@@ -77,13 +78,94 @@ nav a.active {
   margin-left: 10rem;
 }
 
+.animated-text {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.words {
+  display: inline-block;
+  position: relative;
+  height: 1.2em;
+  overflow: hidden;
+}
+
+.words span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  color: #00ff66; /* change color if you want */
+  animation: rotateWords 18s infinite;
+}
+
+/* Delay each word */
+.words span:nth-child(1) {
+  animation-delay: 0s;
+}
+.words span:nth-child(2) {
+  animation-delay: 3s;
+}
+.words span:nth-child(3) {
+  animation-delay: 6s;
+}
+.words span:nth-child(4) {
+  animation-delay: 9s;
+}
+.words span:nth-child(5) {
+  animation-delay: 12s;
+}
+.words span:nth-child(6) {
+  animation-delay: 15s;
+}
+
+@keyframes rotateWords {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.home-details p {
+  font-size: 2.8rem;
+  margin: 1rem 0 2.5rem;
+  margin-left: 10rem;
+}
+
+.home-details .btn-sci {
+  display: flex;
+  align-items: center;
+  margin-left: 20rem;
+  margin-top: 3rem;
+}
+
+.home-details h2 {
+  font-size: 3.2rem;
+  margin-top: -1rem;
+}
+
 .home-details h2 span {
   position: relative;
   display: inline-block;
   color: transparent;
   -webkit-text-stroke: 0.07rem var(--main-color);
   animation: display-text 16s linear infinite;
-  animation-delay: calc(-6s * var(--i));
+  animation-delay: calc(-4s * var(--i));
 }
 
 @keyframes display-text {
@@ -113,19 +195,6 @@ nav a.active {
   90% {
     width: 100%;
   }
-}
-
-.home-details p {
-  font-size: 2.8rem;
-  margin: 1rem 0 2.5rem;
-  margin-left: 10rem;
-}
-
-.home-details .btn-sci {
-  display: flex;
-  align-items: center;
-  margin-left: 20rem;
-  margin-top: 3rem;
 }
 
 .btn {
@@ -165,6 +234,11 @@ nav a.active {
   font-weight: 800;
   transition: 0.5s;
   margin-left: 3rem;
+  .btn2 {
+    position: relative;
+    z-index: 10000;
+    pointer-events: auto;
+  }
 }
 
 .home-details .btn-sci .sci {
@@ -276,11 +350,13 @@ nav a.active {
   text-decoration: none;
   color: var(--white-color);
   border: 0.1rem solid var(--main-color);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .what-card h3 {
-  color: var(--white-color);
+  color: var(--main-color);
   font-size: 2.6rem;
   margin-bottom: 0.8rem;
   text-align: center;
@@ -333,7 +409,9 @@ nav a.active {
   border-radius: 1.2rem;
   border: 0.1rem solid var(--main-color);
   color: var(--white-color);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 #testimonials .card:hover {
@@ -371,7 +449,7 @@ nav a.active {
 
 footer .container {
   background-color: var(--bg-color);
-  margin-top: 40rem;
+  margin-top: 10rem;
 }
 
 footer .row {
@@ -489,27 +567,4 @@ footer .row {
 .row .col {
   display: flex;
   gap: 3rem;
-}
-.contact-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.contact-modal-content {
-  position: relative;
-  width: 95%;
-  max-width: 80rem;
-}
-
-.contact-close {
-  position: absolute;
-  top: -2rem;
-  font-size: 4rem;
-  color: var(--main-color);
-  cursor: pointer;
 }

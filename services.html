@@ -1,237 +1,466 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael's Portfolio</title>
+    <title data-en="Michael's Portfolio" data-sw="Wasifu wa Michael">
+      Michael's Portfolio
+    </title>
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="services.css" />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
-      <a href="#" class="logo">Michael</a>
+      <a href="#" class="logo" data-en="Michael" data-sw="Michael">Michael</a>
       <i class="bx bx-menu" id="menu-icon"></i>
+
       <nav>
-        <a href="home.html" class="active">Home</a>
-        <a href="services.html">Services</a>
-        <a href="resume.html">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <a href="home.html" class="active" data-en="Home" data-sw="Nyumbani"
+          >Home</a
+        >
+        <a href="services.html" data-en="Services" data-sw="Huduma">Services</a>
+        <a href="resume.html" data-en="Resume" data-sw="Wasifu">Resume</a>
+        <a href="portfolio.html" data-en="Portfolio" data-sw="Kazi"
+          >Portfolio</a
+        >
+        <a href="contact.html" data-en="Contact" data-sw="Mawasiliano"
+          >Contact</a
+        >
       </nav>
+
+      <select id="languageSelect" class="lang-select">
+        <option value="en">English</option>
+        <option value="sw">Kiswahili</option>
+      </select>
     </header>
 
-    <!-------Services Section---->
+    <!-- SERVICES -->
     <section class="services-active">
-      <h2>My <span>Services</span></h2>
+      <h2>
+        <span data-en="My" data-sw="Huduma">My</span>
+        <span data-en="Services" data-sw="Zangu">Services</span>
+      </h2>
 
       <div class="services-container">
+        <!-- 1 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bx-code"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Full-Stack Development</h3>
-          <p>
-            Custom websites(business, personal, portfolios)<br />Responsive(mobile,
-            tablet, desktop)<br />
+          <h3
+            data-en="Full-Stack Development"
+            data-sw="Uendelezaji wa Full-Stack"
+          >
+            Full-Stack Development
+          </h3>
+          <p
+            data-en="Custom websites (business, personal, portfolios) Responsive (mobile, tablet, desktop)"
+            data-sw="Tovuti maalum (biashara, binafsi, portfolios) Zinazojibu vifaa vyote (simu, tablet, kompyuta)"
+          >
+            Custom websites(business, personal, portfolios)<br />
+            Responsive(mobile, tablet, desktop)
           </p>
         </div>
 
+        <!-- 2 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bx-trending-up"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>SEO</h3>
-          <p>
-            Technical SEO & performance optimization<br />On-page SEO & schema
-            markup
+          <h3 data-en="SEO" data-sw="SEO">SEO</h3>
+          <p
+            data-en="Technical SEO & performance optimization On-page SEO & schema markup"
+            data-sw="SEO ya kiufundi na uboreshaji wa utendaji SEO ya ukurasa na schema markup"
+          >
+            Technical SEO & performance optimization<br />
+            On-page SEO & schema markup
           </p>
         </div>
 
+        <!-- 3 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bxs-data"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Data Analysis</h3>
-          <p>
+          <h3 data-en="Data Analysis" data-sw="Uchambuzi wa Takwimu">
+            Data Analysis
+          </h3>
+          <p
+            data-en="I turn raw data into clear insights that support smart decisions"
+            data-sw="Ninabadilisha data ghafi kuwa taarifa zinazosaidia maamuzi sahihi"
+          >
             I turn raw data into clear insights that support smart decisions
           </p>
         </div>
 
+        <!-- 4 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bx-mobile"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Mobile Apps</h3>
-          <p>Android apps(Flutter, WebView)<br />Progressive Web Apps(PWA)</p>
+          <h3 data-en="Mobile Apps" data-sw="Programu za Simu">Mobile Apps</h3>
+          <p
+            data-en="Android apps (Flutter, WebView) Progressive Web Apps (PWA)"
+            data-sw="Programu za Android (Flutter, WebView) Programu Endelevu za Wavuti (PWA)"
+          >
+            Android apps(Flutter, WebView)<br />
+            Progressive Web Apps(PWA)
+          </p>
         </div>
 
+        <!-- 5 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bx-desktop"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Web Design</h3>
-          <p>UI/UX focussed layouts<br />Modern, accessible design</p>
+          <h3 data-en="Web Design" data-sw="Ubunifu wa Tovuti">Web Design</h3>
+          <p
+            data-en="UI/UX focused layouts Modern, accessible design"
+            data-sw="Miundo ya UI/UX inayomlenga mtumiaji Ubunifu wa kisasa na unaofikika"
+          >
+            UI/UX focussed layouts<br />
+            Modern, accessible design
+          </p>
         </div>
 
+        <!-- 6 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bx-code-block"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Programming</h3>
-          <p>LIMS & Laboratory systems<br />QC dashboards & reporting</p>
+          <h3 data-en="Programming" data-sw="Upangaji Programu">Programming</h3>
+          <p
+            data-en="LIMS & Laboratory systems QC dashboards & reporting"
+            data-sw="Mifumo ya maabara (LIMS) Dashibodi za ubora na ripoti"
+          >
+            LIMS & Laboratory systems<br />
+            QC dashboards & reporting
+          </p>
         </div>
 
+        <!-- 7 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bx-support"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Maintenance & Support</h3>
-          <p>Ongoing updates, bug fixes and technical support</p>
+          <h3 data-en="Maintenance & Support" data-sw="Matengenezo na Usaidizi">
+            Maintenance & Support
+          </h3>
+          <p
+            data-en="Ongoing updates, bug fixes and technical support"
+            data-sw="Masasisho endelevu, marekebisho ya hitilafu na msaada wa kiufundi"
+          >
+            Ongoing updates, bug fixes and technical support
+          </p>
         </div>
 
+        <!-- 8 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bx-shield-quarter"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Web Security</h3>
-          <p>Secure forms, validation, and protection against common attacks</p>
+          <h3 data-en="Web Security" data-sw="Usalama wa Tovuti">
+            Web Security
+          </h3>
+          <p
+            data-en="Secure forms, validation, and protection against common attacks"
+            data-sw="Fomu salama, uthibitishaji na ulinzi dhidi ya mashambulizi ya kawaida"
+          >
+            Secure forms, validation, and protection against common attacks
+          </p>
         </div>
 
+        <!-- 9 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bxs-server"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Backend Development</h3>
-          <p>Secure APIs, authentication systems and database management</p>
+          <h3 data-en="Backend Development" data-sw="Uendelezaji wa Backend">
+            Backend Development
+          </h3>
+          <p
+            data-en="Secure APIs, authentication systems and database management"
+            data-sw="API salama, mifumo ya uthibitishaji na usimamizi wa hifadhidata"
+          >
+            Secure APIs, authentication systems and database management
+          </p>
         </div>
 
+        <!-- 10 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bxl-sketch"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Design & Graphics</h3>
-          <p>
+          <h3 data-en="Design & Graphics" data-sw="Ubunifu na Michoro">
+            Design & Graphics
+          </h3>
+          <p
+            data-en="Creating Posters, Flyers, Logos, Business cards, Invitations, CVs and Resumes"
+            data-sw="Kutengeneza mabango, vipeperushi, nembo, kadi za biashara, mialiko, CV na Resume"
+          >
             Creating Posters, Flyers, Logos, Business cards, Invitations, CVs
             and Resumes
           </p>
         </div>
 
+        <!-- 11 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bx-code-curly"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Junior developer support</h3>
-          <p>
+          <h3
+            data-en="Junior Developer Support"
+            data-sw="Msaada kwa Waendelezaji Wachanga"
+          >
+            Junior developer support
+          </h3>
+          <p
+            data-en="Reliable development support for startups, teams and individuals"
+            data-sw="Msaada wa uhakika kwa startups, timu na watu binafsi"
+          >
             Reliable development support for startups, teams and individuals
           </p>
         </div>
 
+        <!-- 12 -->
         <div class="services-box">
           <div class="icon">
             <i class="bx bxs-slideshow"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <h3>Presentations & Documents</h3>
-          <p>PowerPoint-style presentations, Reports and Proposals</p>
+          <h3
+            data-en="Presentations & Documents"
+            data-sw="Mawasilisho na Nyaraka"
+          >
+            Presentations & Documents
+          </h3>
+          <p
+            data-en="PowerPoint-style presentations, Reports and Proposals"
+            data-sw="Mawasilisho ya PowerPoint, ripoti na mapendekezo"
+          >
+            PowerPoint-style presentations, Reports and Proposals
+          </p>
         </div>
       </div>
     </section>
-
     <footer>
       <div class="container">
         <div class="row">
+          <!-- COLUMN 1 -->
           <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <!------Second Column--->
-          <div class="footer-col">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">SEO</a></li>
-              <li><a href="#">Backend Developement</a></li>
-              <li><a href="#">Web Security</a></li>
-              <li><a href="#">Full-Stack Developement</a></li>
-              <li><a href="#">Mobile Apps</a></li>
-              <li><a href="#">Design & Graphics</a></li>
-            </ul>
-          </div>
-
-          <!-----Third Column-->
-          <div class="footer-col">
-            <h4>Contact</h4>
+            <h4 data-en="Quick Links" data-sw="Viungo Muhimu">Quick Links</h4>
             <ul>
               <li>
-                <a href="#"><i class="bx bxs-phone">+255691368141</i></a>
+                <a href="home.html" data-en="Home" data-sw="Nyumbani">Home</a>
               </li>
               <li>
-                <a href="#"
-                  ><i class="bx bxs-envelope"> Mikeniles37@gmail.com</i></a
+                <a href="services.html" data-en="Services" data-sw="Huduma"
+                  >Services</a
                 >
               </li>
               <li>
-                <a href="#"
-                  ><i class="bx bx-current-location"> Tanzania, Tarime</i></a
+                <a href="resume.html" data-en="Resume" data-sw="Wasifu"
+                  >Resume</a
                 >
               </li>
-              <li><a href="#">Availability: 8:00 AM - 10:00 PM</a></li>
+              <li>
+                <a href="portfolio.html" data-en="Portfolio" data-sw="Kazi"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" data-en="Contact" data-sw="Mawasiliano"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
 
-          <!-----Fourth Column----->
+          <!-- COLUMN 2 -->
           <div class="footer-col">
-            <h4>Newsletter</h4>
-            <form action="">
-              <input type="text" placeholder="Your Name" class="inputname" />
+            <h4 data-en="Services" data-sw="Huduma">Services</h4>
+            <ul>
+              <li data-en="Web Design" data-sw="Ubunifu wa Tovuti">
+                Web Design
+              </li>
+              <li data-en="SEO" data-sw="SEO">SEO</li>
+              <li
+                data-en="Backend Development"
+                data-sw="Uendelezaji wa Backend"
+              >
+                Backend Development
+              </li>
+              <li data-en="Web Security" data-sw="Usalama wa Tovuti">
+                Web Security
+              </li>
+              <li
+                data-en="Full-Stack Development"
+                data-sw="Uendelezaji wa Full-Stack"
+              >
+                Full-Stack Development
+              </li>
+              <li data-en="Mobile Apps" data-sw="Programu za Simu">
+                Mobile Apps
+              </li>
+              <li data-en="Design & Graphics" data-sw="Ubunifu na Michoro">
+                Design & Graphics
+              </li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 3 -->
+          <div class="footer-col">
+            <h4 data-en="Contact" data-sw="Mawasiliano">Contact</h4>
+            <ul>
+              <li>
+                <i class="bx bxs-phone"></i>
+                <span
+                  data-en="Phone: +255691368141"
+                  data-sw="Simu: +255691368141"
+                >
+                  Phone: +255691368141
+                </span>
+              </li>
+              <li>
+                <i class="bx bxs-envelope"></i>
+                <span
+                  data-en="Email: mikeniles37@gmail.com"
+                  data-sw="Barua Pepe: mikeniles37@gmail.com"
+                >
+                  Email: mikeniles37@gmail.com
+                </span>
+              </li>
+              <li>
+                <i class="bx bx-current-location"></i>
+                <span
+                  data-en="Location: Tanzania, Tarime"
+                  data-sw="Mahali: Tanzania, Tarime"
+                >
+                  Location: Tanzania, Tarime
+                </span>
+              </li>
+              <li
+                data-en="Availability: 8:00 AM - 10:00 PM"
+                data-sw="Upatikanaji: 8:00 Asubuhi - 10:00 Jioni"
+              >
+                Availability: 8:00 AM - 10:00 PM
+              </li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 4 -->
+          <div class="footer-col">
+            <h4 data-en="Newsletter" data-sw="Jarida">Newsletter</h4>
+            <form>
+              <input
+                type="text"
+                class="inputname"
+                data-en-placeholder="Your Name"
+                data-sw-placeholder="Jina Lako"
+                placeholder="Your Name"
+              />
               <input
                 type="email"
-                placeholder="Enter Your Email"
                 class="inputemail"
+                data-en-placeholder="Enter Your Email"
+                data-sw-placeholder="Weka Barua Pepe"
+                placeholder="Enter Your Email"
               />
-              <input type="submit" value="Submit" class="inputsubmit" />
+              <input
+                type="submit"
+                class="inputsubmit"
+                data-en="Submit"
+                data-sw="Wasilisha"
+                value="Submit"
+              />
             </form>
           </div>
         </div>
+
         <hr class="footer-line" />
+
         <div class="row">
           <div class="col">
-            <p>&#169; 2025 Michael. All Rights Reserved</p>
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Terms & Conditions</a></p>
+            <p
+              data-en="© 2025 Michael. All Rights Reserved"
+              data-sw="© 2025 Michael. Haki zote zimehifadhiwa"
+            >
+              © 2025 Michael. All Rights Reserved
+            </p>
+
+            <p>
+              <a
+                href="DOCUMENTS/Privacy Policy-WPS Office.docx"
+                data-en="Privacy Policy"
+                data-sw="Sera ya Faragha"
+                >Privacy Policy</a
+              >
+            </p>
+
+            <p>
+              <a
+                href="DOCUMENTS/Terns and conditions .docx"
+                data-en="Terms & Conditions"
+                data-sw="Sheria na Masharti"
+                >Terms & Conditions</a
+              >
+            </p>
           </div>
 
           <div class="social-icons">
-            <a href="#"><i class="bx bxl-github"></i></a>
-            <a href="#"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://github.com/Mikeniles37"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://wa.me/255691368141"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
             <a href="#"><i class="bx bxl-telegram"></i></a>
             <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
             <a href="#"><i class="bx bxl-youtube"></i></a>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- INLINE LANGUAGE SCRIPT -->
+    <script>
+      (function () {
+        const select = document.getElementById("languageSelect");
+        let lang =
+          localStorage.getItem("lang") ||
+          (navigator.language.startsWith("sw") ? "sw" : "en");
+
+        select.value = lang;
+
+        function translate(l) {
+          document.querySelectorAll("[data-en]").forEach((el) => {
+            el.textContent = el.getAttribute("data-" + l);
+          });
+          document.documentElement.lang = l;
+          localStorage.setItem("lang", l);
+        }
+
+        translate(lang);
+        select.addEventListener("change", () => translate(select.value));
+      })();
+    </script>
   </body>
 </html>
