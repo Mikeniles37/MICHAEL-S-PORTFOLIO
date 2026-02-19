@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Oscar | Full-Stack Developer | Tanzania</title>
+    <meta name="description" content="Michael Oscar - Full-Stack Software Developer, Data Analyst, Web Designer, and Analytical Chemist from Tanzania. See my skills, projects, and hire me for your next project." />
+    <meta name="keywords" content="Michael Oscar, Full-Stack Developer, Web Developer, Data Analyst, Web Designer, Analytical Chemist, Tanzania, Portfolio" />
+    <meta name="author" content="Michael Oscar" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Oscar",
+    "url": "https://yourdomain.com/resume.html",
+    "jobTitle": "Full-Stack Software Developer",
+    "image": "https://yourdomain.com/images/profile.jpg",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "sameAs": [
+      "https://github.com/Mikeniles37",
+      "https://www.linkedin.com/in/mike-niles-459b873a9/",
+      "https://www.instagram.com/mikeniles37/",
+      "https://wa.me/+255691368141"
+    ]
+  }
+  </script>
+
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="home.html" class="logo" data-en="Michael" data-sw="Michael">Michael</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav>
+        <a href="home.html" class="active" data-en="Home" data-sw="Nyumbani">Home</a>
+        <a href="services.html" data-en="Services" data-sw="Huduma">Services</a>
+        <a href="resume.html" data-en="Resume" data-sw="Wasifu">Resume</a>
+        <a href="portfolio.html" data-en="Portfolio" data-sw="Miradi">Portfolio</a>
+        <a href="contact.html" data-en="Contact" data-sw="Mawasiliano">Contact</a>
+      </nav>
+
+      <select id="languageSelect" class="lang-select">
+        <option value="en">English</option>
+        <option value="sw">Kiswahili</option>
+      </select>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home">
+      <div class="home-details">
+        <h1 data-en="Michael Oscar" data-sw="Michael Oscar">Michael Oscar</h1>
+
+        <h2 class="animated-text">
+          <span data-en="I'm a" data-sw="Mimi ni">I'm a</span>
+          <span style="--i: 4" data-en="Full-Stack Software Developer" data-sw="Msanidi Programu wa Full-Stack">Full-Stack Software Developer</span>
+          <span style="--i: 3" data-en="Data Analyst" data-sw="Mchambuzi wa Takwimu">Data Analyst</span>
+          <span style="--i: 2" data-en="Web Designer" data-sw="Mbunifu wa Tovuti">Web Designer</span>
+          <span style="--i: 1" data-en="Analytical Chemist" data-sw="Mkemia wa Uchambuzi">Analytical Chemist</span>
+        </h2>
+
+        <p data-en="I am a professional Full-Stack Software Developer with 3 years of hands-on experience in building modern, responsive, and user-friendly web applications."
+           data-sw="Mimi ni Msanidi Programu wa Full-Stack mwenye uzoefu wa miaka 3 katika kutengeneza tovuti za kisasa, rafiki kwa mtumiaji na zinazojibu vizuri.">
+          I am a professional Full-Stack Software Developer with 3 years of hands-on experience in building modern, responsive, and user-friendly web applications.
+        </p>
+
+        <div class="btn-sci">
+          <a href="#" class="btn" data-en="Download CV" data-sw="Pakua Wasifu">Download CV</a>
+          <a href="#" class="btn2" id="hireMeBtn" data-en="Hire Me" data-sw="Niajiri">Hire Me</a>
+
+          <div class="sci">
+            <a href="https://github.com/Mikeniles37"><i class="bx bxl-github"></i></a>
+            <a href="https://wa.me/+255691368141"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://t.me/Michae Odhiambo"><i class="bx bxl-telegram"></i></a>
+            <a href="https://www.instagram.com/mikeniles37/?hl=en"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mike-niles-459b873a9/"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.youtube.com/@MikeNiles3708"><i class="bx bxl-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="IMAGES/mike.png" alt="Michael Oscar Portrait" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT MODAL -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div class="contact-form">
+          <h3 data-en="Send Me a Message" data-sw="Tuma Ujumbe Kwangu">Send Me a Message</h3>
+          <form>
+            <div class="form-row">
+              <input type="text" placeholder="First Name" data-en="First Name" data-sw="Jina La Kwanza" required />
+              <input type="text" placeholder="Last Name" data-en="Last Name" data-sw="Jina La Mwisho" required />
+            </div>
+            <input type="email" placeholder="Email Address" data-en="Email Address" data-sw="Barua Pepe" required />
+            <input type="tel" placeholder="Telephone number e.g. +255 XXXXXXXXX" data-en="Telephone number e.g. +255 XXXXXXXXX" data-sw="Nambari ya Simu mfano +255 XXXXXXXXX" required />
+            <textarea placeholder="Your Message" data-en="Your Message" data-sw="Ujumbe Wako" required></textarea>
+            <button type="submit" class="btn-send" data-en="Send Message" data-sw="Tuma Ujumbe">Send Message</button>
+            <button type="reset" class="btn-reset" data-en="Reset" data-sw="Weka Upya">Reset</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4 data-en="Quick Links" data-sw="Viungo Muhimu">Quick Links</h4>
+            <ul>
+              <li><a href="home.html" data-en="Home" data-sw="Nyumbani">Home</a></li>
+              <li><a href="services.html" data-en="Services" data-sw="Huduma">Services</a></li>
+              <li><a href="resume.html" data-en="Resume" data-sw="Wasifu">Resume</a></li>
+              <li><a href="portfolio.html" data-en="Portfolio" data-sw="Miradi">Portfolio</a></li>
+              <li><a href="contact.html" data-en="Contact" data-sw="Mawasiliano">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script>
+      // Language translation
+      const langSelect = document.getElementById("languageSelect");
+      const htmlLang = localStorage.getItem("lang") || "en";
+      langSelect.value = htmlLang;
+      document.documentElement.lang = htmlLang;
+
+      function translate(lang) {
+        document.querySelectorAll("[data-en]").forEach(el => {
+          el.textContent = el.getAttribute("data-" + lang) || el.textContent;
+          if(el.tagName === "INPUT") {
+            if(el.type === "submit") el.value = el.getAttribute("data-" + lang);
+            else el.placeholder = el.getAttribute("data-" + lang);
+          }
+        });
+        document.documentElement.lang = lang;
+        localStorage.setItem("lang", lang);
+      }
+
+      translate(htmlLang);
+      langSelect.addEventListener("change", () => translate(langSelect.value));
+
+      // Contact modal
+      const hireBtn = document.getElementById("hireMeBtn");
+      const modal = document.getElementById("contactModal");
+      const closeBtn = document.getElementById("closeModal");
+
+      hireBtn.addEventListener("click", e => {
+        e.preventDefault();
+        modal.style.display = "flex";
+      });
+
+      closeBtn.addEventListener("click", () => modal.style.display = "none");
+      window.addEventListener("click", e => { if(e.target === modal) modal.style.display = "none"; });
+
+      // Mobile nav toggle
+      const menuIcon = document.getElementById("menu-icon");
+      const navbar = document.querySelector("nav");
+      menuIcon.addEventListener("click", () => navbar.classList.toggle("active"));
+      document.querySelectorAll("nav a").forEach(link => {
+        link.addEventListener("click", () => navbar.classList.remove("active"));
+      });
+    </script>
+  </body>
+</html>
