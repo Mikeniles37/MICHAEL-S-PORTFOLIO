@@ -153,17 +153,22 @@ h2 span {
 
 footer .container {
   background-color: var(--bg-color);
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 footer .row {
   display: flex;
   justify-content: space-between;
   padding: 4rem 10rem;
+  gap: 3rem;
 }
 
 .footer-col ul {
   list-style: none;
+}
+
+.footer-col ul li{
+  font-size: 1.6rem;
 }
 
 .footer-col h4 {
@@ -171,6 +176,10 @@ footer .row {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   position: relative;
+}
+
+.footer-col h4:hover{
+  color: var(--main-color);
 }
 
 .footer-col h4::before {
@@ -219,7 +228,8 @@ footer .row {
 
 .col p {
   color: var(--white-color);
-  font-size: 2.5rem;
+  font-size: 1.6rem;
+  
 }
 
 .footer .col a {
@@ -233,6 +243,9 @@ footer .row {
 .row .social-icons {
   border-radius: 50%;
   margin-top: -1.4rem;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .row .social-icons i {
@@ -240,10 +253,11 @@ footer .row {
   padding: 0.8rem;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: var(--main-color);
   margin: 0 0.8rem;
   transition: 0.5s;
+  left: 7rem;
 }
 
 .row .social-icons i:hover {
@@ -260,8 +274,9 @@ footer .row {
 
 .row .col p a {
   color: var(--white-color);
-  margin-left: 3rem;
-  font-size: 2.5rem;
+  margin-left: 3.9rem;
+  font-size: 1.7rem;
+  margin-right: 2rem;
 }
 
 .row .col p a:hover {
@@ -271,4 +286,190 @@ footer .row {
 .row .col {
   display: flex;
   gap: 3rem;
+}
+
+
+/* ================= RESPONSIVE GLOBAL ================= */
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* ================= MOBILE NAVBAR & HEADER ================= */
+
+@media (max-width: 900px) {
+
+  /* Header scrolls with page */
+  header {
+    position: relative;
+    padding: 2rem 5%;
+  }
+
+  /* Menu icon visible */
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+
+  /* Navbar vertical and hidden by default */
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column; /* vertical menu */
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 100;
+  }
+
+  /* Show menu when active */
+  nav.active {
+    max-height: 500px; /* enough for all links */
+  }
+
+  /* Navbar links styling */
+  nav a {
+    margin: 0;
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    border-top: 0.1rem solid var(--main-color);
+    transition: 0.3s;
+  }
+
+  nav a:first-child {
+    border-top: none;
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: var(--main-color);
+  }
+
+  /* FOOTER */
+  footer .row {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 4rem;
+  }
+
+  .footer-col h4{
+    font-size: 4rem;
+  }
+
+  .footer-col ul li {
+    font-size: 3rem;
+  }
+
+  .footer-col ul li a {
+    font-size: 3rem;
+  }
+
+  .footer-col input {
+    width: 80%;
+    font-size: 3rem;
+  }
+  .row .col {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .row .col p {
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .row .col p a {
+    font-size: 3rem;
+    margin-left: 0;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons i {
+    font-size: 3rem;
+    margin: 0 1rem;
+  }
+}
+
+/* ================= SMALL SCREENS (PHONES) ================= */
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-form h3 {
+    font-size: 2.4rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 1.5rem;
+  }
+
+}
+/* Language select styling */
+.lang-select {
+  appearance: none;          /* remove default arrow */
+  -webkit-appearance: none;  /* Safari/Chrome */
+  -moz-appearance: none;     /* Firefox */
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  font-size: 2.5rem;
+  padding: 0.8rem 2.5rem 0.8rem 1rem; /* extra right space for arrow */
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover & focus effects */
+.lang-select:hover,
+.lang-select:focus {
+  background-color: var(--second-bg-color);
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+/* Custom arrow using pseudo-element */
+.lang-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-select-wrapper::after {
+  content: "\25BC"; /* downward arrow */
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+
+/* Optional: small screens adjustment */
+@media (max-width: 900px) {
+  .lang-select {
+    font-size: 1.6rem;
+    padding: 0.6rem 2rem 0.6rem 0.8rem;
+  }
 }

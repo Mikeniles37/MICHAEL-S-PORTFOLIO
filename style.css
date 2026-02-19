@@ -34,6 +34,15 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  header {
+
+  top: 0;
+  transition: transform 0.3s ease;
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
 }
 
 .logo {
@@ -48,6 +57,7 @@ nav a {
   font-weight: 500;
   margin-left: 3.5rem;
   transition: 0.5s;
+   
 }
 
 nav a:hover,
@@ -58,6 +68,7 @@ nav a.active {
 #menu-icon {
   font-size: 4rem;
   display: none;
+  
 }
 
 .home {
@@ -69,55 +80,21 @@ nav a.active {
 .home-details h1 {
   margin-top: 12rem;
   font-size: clamp(3.5rem, 10vw, 5.5rem);
-  margin-left: 10rem;
+  margin-left: 4rem;
 }
 
 .home-details h2 {
   display: inline-block;
   font-size: 3.2rem;
-  margin-left: 10rem;
+  margin-left: 4rem;
 }
 
 .animated-text {
-  font-size: 28px;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
-.words {
-  display: inline-block;
-  position: relative;
-  height: 1.2em;
-  overflow: hidden;
-}
 
-.words span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  color: #00ff66; /* change color if you want */
-  animation: rotateWords 18s infinite;
-}
-
-/* Delay each word */
-.words span:nth-child(1) {
-  animation-delay: 0s;
-}
-.words span:nth-child(2) {
-  animation-delay: 3s;
-}
-.words span:nth-child(3) {
-  animation-delay: 6s;
-}
-.words span:nth-child(4) {
-  animation-delay: 9s;
-}
-.words span:nth-child(5) {
-  animation-delay: 12s;
-}
-.words span:nth-child(6) {
-  animation-delay: 15s;
-}
 
 @keyframes rotateWords {
   0% {
@@ -142,16 +119,16 @@ nav a.active {
 }
 
 .home-details p {
-  font-size: 2.8rem;
+  font-size: 1.9rem;
   margin: 1rem 0 2.5rem;
-  margin-left: 10rem;
+  margin-left: 4rem;
 }
 
 .home-details .btn-sci {
   display: flex;
   align-items: center;
   margin-left: 20rem;
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
 .home-details h2 {
@@ -162,10 +139,11 @@ nav a.active {
 .home-details h2 span {
   position: relative;
   display: inline-block;
-  color: transparent;
+  color: var(--main-color);
   -webkit-text-stroke: 0.07rem var(--main-color);
   animation: display-text 16s linear infinite;
   animation-delay: calc(-4s * var(--i));
+  font-size:2.3rem;
 }
 
 @keyframes display-text {
@@ -197,6 +175,8 @@ nav a.active {
   }
 }
 
+
+
 .btn {
   display: inline-block;
   padding: 1rem 3rem;
@@ -204,10 +184,12 @@ nav a.active {
   border: 0.2rem solid var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: black;
   font-weight: 800;
   transition: 0.5s;
+  margin-left: -14rem;
+  
 }
 
 .btn:hover {
@@ -229,32 +211,36 @@ nav a.active {
   border: 0.2rem solid var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 2.9rem;
+  font-size: 1.9rem;
   color: black;
   font-weight: 800;
   transition: 0.5s;
   margin-left: 3rem;
-  .btn2 {
-    position: relative;
-    z-index: 10000;
-    pointer-events: auto;
-  }
+  
+  
 }
 
 .home-details .btn-sci .sci {
-  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;  
+  margin-left: 3rem;   /* prevents wrapping */
 }
 
 .home-details .btn-sci .sci a {
-  display: inline-flex;
-  padding: 0.8rem;
-  border: 0.2rem solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;           /* fixed circle size */
+  height: 40px;          /* fixed circle size */
+  border: 2px solid var(--main-color);
   border-radius: 50%;
-  font-size: 2.9rem;
+  font-size: 18px;       /* smaller icon */
   color: var(--main-color);
-  margin: 0 0.8rem;
-  transition: 0.5s;
+  transition: 0.3s ease;
 }
+
 
 .home-details .btn-sci .sci a:hover {
   background: var(--main-color);
@@ -264,8 +250,8 @@ nav a.active {
 
 .home-img .img-box {
   position: relative;
-  width: 32vw;
-  height: 32vw;
+  width: 27vw;
+  height: 27vw;
   border-radius: 50%;
   padding: 0.5rem;
   display: flex;
@@ -279,8 +265,8 @@ nav a.active {
 .home-img .img-box::after {
   content: "";
   position: absolute;
-  width: 100rem;
-  height: 100rem;
+  width: 39rem;
+  height: 39rem;
   background: conic-gradient(
     transparent,
     transparent,
@@ -321,6 +307,7 @@ nav a.active {
   width: 85%;
   object-fit: cover;
   mix-blend-mode: lighten;
+  margin-right: 3rem;
 }
 
 #what-i-do {
@@ -353,6 +340,7 @@ nav a.active {
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
+    margin-right: 3rem;
 }
 
 .what-card h3 {
@@ -456,10 +444,15 @@ footer .row {
   display: flex;
   justify-content: space-between;
   padding: 4rem 10rem;
+  gap: 3rem;
 }
 
 .footer-col ul {
   list-style: none;
+}
+
+.footer-col ul li{
+  font-size: 1.6rem;
 }
 
 .footer-col h4 {
@@ -467,6 +460,10 @@ footer .row {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   position: relative;
+}
+
+.footer-col h4:hover{
+  color: var(--main-color);
 }
 
 .footer-col h4::before {
@@ -515,7 +512,8 @@ footer .row {
 
 .col p {
   color: var(--white-color);
-  font-size: 2.5rem;
+  font-size: 1.6rem;
+  
 }
 
 .footer .col a {
@@ -529,6 +527,9 @@ footer .row {
 .row .social-icons {
   border-radius: 50%;
   margin-top: -1.4rem;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .row .social-icons i {
@@ -536,10 +537,11 @@ footer .row {
   padding: 0.8rem;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: var(--main-color);
   margin: 0 0.8rem;
   transition: 0.5s;
+  left: 7rem;
 }
 
 .row .social-icons i:hover {
@@ -556,8 +558,9 @@ footer .row {
 
 .row .col p a {
   color: var(--white-color);
-  margin-left: 3rem;
-  font-size: 2.5rem;
+  margin-left: 3.9rem;
+  font-size: 1.7rem;
+  margin-right: 2rem;
 }
 
 .row .col p a:hover {
@@ -567,4 +570,478 @@ footer .row {
 .row .col {
   display: flex;
   gap: 3rem;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background: #fff;
+  margin: 5rem auto;
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}/* ================= CONTACT FORM ================= */
+
+.contact-form {
+  width: 100%;
+  flex: 1;
+}
+
+.contact-form h3 {
+  margin-bottom: 2rem;
+  color: #000;
+  font-size: 2.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Inputs & textarea */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #480707;
+  font-size: 1.6rem;
+  outline: none;
+  background: #fff;
+  color: #000;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #666;
+}
+
+/* Focus state */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #00d9c0;
+  box-shadow: 0 0 0 2px rgba(0, 217, 192, 0.2);
+}
+
+/* Two inputs in one row */
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+/* Textarea */
+.contact-form textarea {
+  resize: none;
+  height: 12rem;
+}
+
+/* Buttons */
+.btn-send {
+  width: 100%;
+  background: #00d9c0;
+  border: none;
+  padding: 1.2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-send:hover {
+  background: #00b3a0;
+  transform: translateY(-1px);
+}
+
+.btn-reset {
+  width: 100%;
+  background: #f44336;
+  border: none;
+  padding: 1.2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-reset:hover {
+  background: #d32f2f;
+  transform: translateY(-1px);
+}
+
+/* ================= MODAL SUPPORT ================= */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background: #fff;
+  margin: 6rem auto;
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-form h3 {
+    font-size: 2.4rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================= RESPONSIVE GLOBAL ================= */
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* ================= MOBILE NAVBAR & HEADER ================= */
+
+@media (max-width: 900px) {
+
+  /* Header scrolls with page */
+  header {
+    position: relative;
+    padding: 2rem 5%;
+  }
+
+  /* Menu icon visible */
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+
+  /* Navbar vertical and hidden by default */
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column; /* vertical menu */
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 100;
+  }
+
+  /* Show menu when active */
+  nav.active {
+    max-height: 500px; /* enough for all links */
+  }
+
+  /* Navbar links styling */
+  nav a {
+    margin: 0;
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    border-top: 0.1rem solid var(--main-color);
+    transition: 0.3s;
+  }
+
+  nav a:first-child {
+    border-top: none;
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: var(--main-color);
+  }
+
+  /* HOME SECTION RESPONSIVE */
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 5%;
+    margin-top: 0;
+  }
+
+  /* IMAGE MOVES TO TOP */
+  .home-img {
+    order: -1;
+    margin-top: 5rem;
+  }
+
+  .home-img .img-box {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .home-details h1 {
+    margin-top: 4rem;
+  }
+
+  .home-details p {
+    font-size: 1.8rem;
+    font-size: 3rem;
+  }
+  .home-details .animated-text span{
+    font-size: 4rem;
+  }
+
+  /* Buttons & Social Icons centered */
+  .btn-sci {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    font-size: 5rem;
+  }
+  .btn{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .btn2{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .home-details .btn-sci .sci {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -4rem;
+    margin-top: 3rem;
+    font-size: 3rem;
+  }
+
+
+.home-details .btn-sci .sci a{
+  font-size: 2rem;
+  m
+}
+  /* WHAT I DO SECTION */
+  .what-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 2rem;
+    min-width: unset; /* remove desktop min-width */
+  }
+
+  #what-i-do .section-title {
+    font-size: 4rem;
+  }
+
+  #what-i-do h3 {
+    font-size: 3.8rem;
+  }
+
+  #what-i-do p{
+    font-size: 3rem;
+  }
+
+  /* TESTIMONIALS */
+  .card-grid {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+
+  #testimonials .section-title {
+    font-size: 4rem;
+  }
+  #testimonials .card p {
+    font-size: 2.4rem;
+  }
+
+
+  #testimonials .card span{
+    font-size: 2.3rem;
+  }
+
+  /* FOOTER */
+  footer .row {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 4rem;
+  }
+
+  .footer-col h4{
+    font-size: 4rem;
+  }
+
+  .footer-col ul li {
+    font-size: 3rem;
+  }
+
+  .footer-col ul li a {
+    font-size: 3rem;
+  }
+
+  .footer-col input {
+    width: 80%;
+    font-size: 3rem;
+  }
+  .row .col {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .row .col p {
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .row .col p a {
+    font-size: 3rem;
+    margin-left: 0;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons i {
+    font-size: 3rem;
+    margin: 0 1rem;
+  }
+}
+
+/* ================= SMALL SCREENS (PHONES) ================= */
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-form h3 {
+    font-size: 2.4rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 4rem auto;
+  }
+}
+@media (max-width: 900px) {
+  .home-img .img-box::before,
+  .home-img .img-box::after {
+    width: 70vw;   /* slightly bigger than image */
+    height: 70vw;  /* maintain circle */
+  }
+
+  .home-img .img-box .img-item img {
+    top: 4rem;      /* adjust vertical position if needed */
+    width: 85%;     /* keep inside the border */
+  }
+}
+/* Language select styling */
+.lang-select {
+  appearance: none;          /* remove default arrow */
+  -webkit-appearance: none;  /* Safari/Chrome */
+  -moz-appearance: none;     /* Firefox */
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  font-size: 2.5rem;
+  padding: 0.8rem 2.5rem 0.8rem 1rem; /* extra right space for arrow */
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover & focus effects */
+.lang-select:hover,
+.lang-select:focus {
+  background-color: var(--second-bg-color);
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+/* Custom arrow using pseudo-element */
+.lang-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-select-wrapper::after {
+  content: "\25BC"; /* downward arrow */
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+
+/* Optional: small screens adjustment */
+@media (max-width: 900px) {
+  .lang-select {
+    font-size: 1.6rem;
+    padding: 0.6rem 2rem 0.6rem 0.8rem;
+  }
 }

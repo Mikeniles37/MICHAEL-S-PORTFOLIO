@@ -1,19 +1,133 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-en="Michael's Portfolio" data-sw="Wasifu wa Michael">
-      Michael's Portfolio
-    </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Michael's Services" data-sw="Huduma za Michael">Michael's Services</title>
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="services.css" />
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Michael Oscar offers Full-Stack Development, SEO, Data Analysis, Mobile Apps, Web Design, Programming, and Web Security services." data-sw="Michael Oscar anatoa Uendelezaji wa Full-Stack, SEO, Uchambuzi wa Takwimu, Programu za Simu, Ubunifu wa Tovuti, Upangaji Programu, na Usalama wa Tovuti." />
+  <meta name="keywords" content="Full-Stack Developer, Web Design, SEO, Mobile Apps, Data Analysis, Programming, Web Security, Michael Oscar" />
+  <meta name="author" content="Michael Oscar" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="services.css" />
+
+
+  <!-- Schema.org Structured Data for Michael Oscar Services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Oscar",
+    "url": "https://yourdomain.com/services.html",
+    "jobTitle": "Full-Stack Software Developer",
+    "image": "https://yourdomain.com/images/profile.jpg",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "sameAs": [
+      "https://github.com/Mikeniles37",
+      "https://wa.me/+255691368141",
+      "https://t.me/Michae Odhiambo",
+      "https://www.instagram.com/mikeniles37/?hl=en",
+      "https://www.linkedin.com/in/mike-niles-459b873a9/",
+      "https://www.youtube.com/@MikeNiles3708"
+    ],
+    "hasPart": [
+      {
+        "@type": "CreativeWork",
+        "name": "Full-Stack Development",
+        "url": "https://yourdomain.com/services.html#fullstack",
+        "description": "Custom websites (business, personal, portfolios) with responsive design for all devices.",
+        "keywords": "Full-Stack Development, HTML, CSS, JavaScript, Responsive"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "SEO",
+        "url": "https://yourdomain.com/services.html#seo",
+        "description": "Technical SEO and on-page optimization including schema markup.",
+        "keywords": "SEO, Technical SEO, Schema, On-page SEO"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Data Analysis",
+        "url": "https://yourdomain.com/services.html#dataanalysis",
+        "description": "Transforming raw data into actionable insights for smart decision-making.",
+        "keywords": "Data Analysis, Insights, Reporting, Decision Making"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Mobile Apps",
+        "url": "https://yourdomain.com/services.html#mobileapps",
+        "description": "Android apps using Flutter or WebView and Progressive Web Apps (PWA).",
+        "keywords": "Mobile Apps, Flutter, WebView, PWA, Android"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Web Design",
+        "url": "https://yourdomain.com/services.html#webdesign",
+        "description": "UI/UX focused, modern and accessible website designs.",
+        "keywords": "Web Design, UI, UX, Responsive, Modern Design"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Programming",
+        "url": "https://yourdomain.com/services.html#programming",
+        "description": "LIMS, laboratory systems, QC dashboards, and reporting tools.",
+        "keywords": "Programming, LIMS, Laboratory, QC, Dashboards"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Maintenance & Support",
+        "url": "https://yourdomain.com/services.html#support",
+        "description": "Ongoing updates, bug fixes, and technical support.",
+        "keywords": "Maintenance, Support, Updates, Bug Fixes, Technical Support"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Web Security",
+        "url": "https://yourdomain.com/services.html#security",
+        "description": "Secure forms, validation, and protection against common attacks.",
+        "keywords": "Web Security, Forms, Validation, Protection, Cybersecurity"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Backend Development",
+        "url": "https://yourdomain.com/services.html#backend",
+        "description": "Secure APIs, authentication systems, and database management.",
+        "keywords": "Backend Development, APIs, Authentication, Database, Security"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Design & Graphics",
+        "url": "https://yourdomain.com/services.html#design",
+        "description": "Creating posters, flyers, logos, business cards, invitations, CVs, and resumes.",
+        "keywords": "Design, Graphics, Posters, Logos, Business Cards, Invitations"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Junior Developer Support",
+        "url": "https://yourdomain.com/services.html#junior",
+        "description": "Reliable development support for startups, teams, and individuals.",
+        "keywords": "Junior Developer, Support, Startups, Teams, Individuals"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Presentations & Documents",
+        "url": "https://yourdomain.com/services.html#presentations",
+        "description": "PowerPoint-style presentations, reports, and proposals.",
+        "keywords": "Presentations, Documents, Reports, Proposals, PowerPoint"
+      }
+    ]
+  }
+  </script>
+
   </head>
-
+        
   <body>
     <!-- HEADER -->
     <header>
@@ -339,16 +453,17 @@
                 </span>
               </li>
               <li>
-                <i class="bx bxs-envelope"></i>
+                <a href="#"><i class="bx bxs-envelope"></i></a>
                 <span
                   data-en="Email: mikeniles37@gmail.com"
-                  data-sw="Barua Pepe: mikeniles37@gmail.com"
+                
+                   data-sw="Barua Pepe: mikeniles37@gmail.com"
                 >
                   Email: mikeniles37@gmail.com
                 </span>
               </li>
               <li>
-                <i class="bx bx-current-location"></i>
+                <a href="#"><i class="bx bx-current-location"></i></a>
                 <span
                   data-en="Location: Tanzania, Tarime"
                   data-sw="Mahali: Tanzania, Tarime"
@@ -360,7 +475,8 @@
                 data-en="Availability: 8:00 AM - 10:00 PM"
                 data-sw="Upatikanaji: 8:00 Asubuhi - 10:00 Jioni"
               >
-                Availability: 8:00 AM - 10:00 PM
+              </li>
+                
               </li>
             </ul>
           </div>
@@ -462,5 +578,21 @@
         select.addEventListener("change", () => translate(select.value));
       })();
     </script>
+
+    <script>
+  const menuIcon = document.getElementById("menu-icon");
+  const navbar = document.querySelector("nav");
+
+  menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+
+  // Close menu when a link is clicked (mobile UX)
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      navbar.classList.remove("active");
+    });
+  });
+</script>
   </body>
 </html>

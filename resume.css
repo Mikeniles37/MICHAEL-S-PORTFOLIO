@@ -62,14 +62,14 @@ nav a.active {
 .resume-box h2 {
   margin-top: 10rem;
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   margin-left: 8rem;
 }
 
 .resume-box p {
-  font-size: 2rem;
-  margin-left: 5rem;
+  font-size: 3rem;
+  margin-left: 1.3rem;
   line-height: 1.4;
 }
 
@@ -84,7 +84,7 @@ nav a.active {
   height: 7rem;
   background: var(--bg-color);
   border: 0.2rem solid var(--second-bg-color);
-  margin-left: 4rem;
+  margin-left: 1.3rem;
   margin-top: 2rem;
   font-size: 2.5rem;
   color: var(--white-color);
@@ -135,20 +135,26 @@ nav a.active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: -3rem;
 }
 
 .resume-item .year {
   color: var(--main-color);
+  text-align: center;
 }
 
 .resume-item h3 {
   font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
 }
 
 .resume-item .company {
   position: relative;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .resume-item .company::before {
@@ -175,313 +181,100 @@ nav a.active {
   background: var(--main-color);
 }
 
-.skills-wrapper {
-  margin-top: 40px;
-}
-.skills-title {
-  font-size: 22px;
-  margin: 30px 0 15px;
+
+.resume-detail.skills .resume-list{
+  grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr) 45rem/4);
+  height: auto;
+  overflow: visible;
 }
 
-.skill {
-  margin-bottom: 12px;
-}
-.skill span {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.bar {
-  background: #eaeaea;
-  height: 10px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.progress {
-  height: 100%;
-  width: 0;
-  border-radius: 20px;
-  animation: load 2s forwards;
-}
-
-.progress.html {
-  width: 95%;
-  background: #e34c26;
-}
-.progress.css {
-  width: 90%;
-  background: #264de4;
-}
-.progress.js {
-  width: 85%;
-  background: #f0db4f;
-}
-.progress.node {
-  width: 80%;
-  background: #3c873a;
-}
-.progress.express {
-  width: 75%;
-  background: #333;
-}
-.progress.react {
-  width: 80%;
-  background: #61dafb;
-}
-.progress.vue {
-  width: 70%;
-  background: #42b883;
-}
-.progress.tailwind {
-  width: 85%;
-  background: #38bdf8;
-}
-.progress.php {
-  width: 75%;
-  background: #777bb3;
-}
-.progress.python {
-  width: 80%;
-  background: #3776ab;
-}
-.progress.mongo {
-  width: 75%;
-  background: #4db33d;
-}
-.progress.mysql {
-  width: 80%;
-  background: #00758f;
-}
-.progress.bcrypt {
-  width: 70%;
-  background: #ff9800;
-}
-.progress.oauth {
-  width: 65%;
-  background: #9c27b0;
-}
-.progress.aws {
-  width: 60%;
-  background: #ff9900;
-}
-.progress.azure {
-  width: 55%;
-  background: #0078d4;
-}
-
-@keyframes load {
-  from {
-    width: 0;
-  }
-}
-
-/* SOFT SKILLS */
-.soft-skills {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.circle {
-  width: 120px;
-  height: 150px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.circle svg {
-  width: 120px;
-  height: 120px;
-  transform: rotate(-90deg);
-}
-
-.circle circle {
-  fill: none;
-  stroke-width: 10;
-  stroke-linecap: round;
-}
-
-.circle circle:first-child {
-  stroke: #eee;
-}
-.circle circle:last-child {
-  stroke: #00bcd4;
-  stroke-dasharray: 314;
-  stroke-dashoffset: 314;
-  transition: stroke-dashoffset 2s;
-}
-/* ================================
-   SKILLS SECTION
-================================ */
-.skills-wrapper {
-  margin-top: 3rem; /* 30px */
-}
-
-/* ---------- HARD SKILLS ---------- */
-.skill {
-  margin-bottom: 1.8rem; /* 18px */
-}
-
-.skill-name {
-  display: flex;
-  justify-content: space-between;
-  font-size: 2.1rem; /* 14px */
-  font-weight: 700;
-  margin-bottom: 0.6rem; /* 6px */
-}
-
-.skill-name:hover {
-  color: var(--main-color);
-}
-
-.skill-bar {
-  width: 100%;
-  height: 0.8rem; /* 8px */
-  background: #1e293b;
-  border-radius: 2rem;
-  overflow: hidden;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.skill-fill {
-  height: 100%;
-  width: 0;
-  background: var(--main-color);
-  border-radius: 2rem;
-  transition: width 1.4s ease-in-out;
-}
-
-/* ---------- SOFT SKILLS ---------- */
-.soft-skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: 3rem; /* 30px */
-  margin-top: 5rem; /* 50px */
-  text-align: center;
-}
-
-.soft-skill p {
-  margin-top: 1rem; /* 10px */
-  font-size: 1.4rem; /* 14px */
-  font-weight: 500;
-}
-
-/* ================================
-   CIRCULAR SOFT SKILLS
-================================ */
-.soft-skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: 3rem;
-  margin-top: 5rem;
-  text-align: center;
-}
-
-.soft-skill p {
-  margin-top: 1rem;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: var(--white-color);
-}
-
-.soft-skill p:hover {
-  color: var(--main-color);
-}
-
-/* ---------- CIRCLE WRAPPER ---------- */
-.circle {
+.resume-detail.skills .resume-item{
   position: relative;
-  width: 12rem;
-  height: 12rem;
-  margin: 0 auto;
-  margin-top: 8rem;
-}
-
-/* ---------- SVG ---------- */
-.circle svg {
-  width: 100%;
-  height: 100%;
-  transform: rotate(-90deg);
-}
-
-/* ---------- CIRCLE STROKES ---------- */
-.circle circle {
-  fill: none;
-  stroke-width: 1rem;
-  stroke-linecap: round;
-}
-
-/* Background ring */
-.circle .bg {
-  stroke: #1e293b;
-}
-
-/* Progress ring */
-.circle .progress {
-  stroke: #38bdf8;
-  stroke-dasharray: 339.29;
-  stroke-dashoffset: 339.29;
-  transition: stroke-dashoffset 1.5s ease;
-}
-
-/* ---------- PERCENT TEXT ---------- */
-.circle span {
-  position: absolute;
-  inset: 0;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  font-weight: 600;
+  height: auto;
+
 }
 
-.resume-detail.about .resume-list {
-  height: auto;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+.resume-detail.skills .resume-item i{
+  font-size: 3.5rem;
+  text-align: left;
+  align-items: flex-start;
+  transition: .5s;
 }
 
-.resume-detail.about .resume-item {
+.resume-detail.skills .resume-item:hover i{
+  color: var(--main-color);
+}
+
+.resume-detail.skills .resume-item span{
+  font-size: 3rem;
+  position: absolute;
+  top: -3%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(.9);
+  transition: .2s;
+}
+
+.resume-detail.skills .resume-item:hover span{
+  top: -6%;
+  opacity: 1;
+  transform: scale(1);
+
+}
+
+
+.skill-bar{
+  width: 100%;
+  height: 0.6rem;
+  background:#2f2f2f;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.skill-progress{
+  height: 100%;
+  background: var(--main-color);
+  width: 0;
+  border-radius: 1rem;
+  transition: width .5s ease;
+}
+
+.skill-percantage{
+  margin-top: 4rem;
+  color: var(--main-color);
+}
+
+.resume-detail.about .resume-list{
   height: auto;
-  padding: 0 0 0.5rem;
+  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+}
+
+.resume-detail.about .resume-item{
+  height: auto;
+  padding: 0 0 .5rem;
   background: transparent;
 }
 
-.resume-detail.about .resume-item p {
+.resume-detail.about .resume-item p{
   color: var(--main-color);
-  font-size: 2.8rem;
-  font-weight: 700;
+  font-size: 4rem;
+  margin-left: 4rem;
 }
 
-.resume-detail.about .resume-item p span {
-  color: var(--white-color);
-  font-size: 2rem;
-  font-weight: 600;
+.resume-detail.about .resume-item p span{
+color: var(--white-color);
+font-size: 3rem;
+margin-right: -5rem;
 }
 
-.skill h3 {
-  font-size: 3rem;
-  margin-left: 50rem;
-  text-decoration: underline;
-  margin-top: 4rem;
-}
 
-.skill h3:hover {
-  color: var(--main-color);
-}
+  
 
-.soft-skills h3 {
-  font-size: 3rem;
-  margin-left: 40rem;
-  margin-top: 2rem;
-  text-decoration: underline;
-}
-
-.soft-skills h3:hover {
-  color: var(--main-color);
-}
 footer .container {
   background-color: var(--bg-color);
   margin-top: 10rem;
@@ -491,10 +284,15 @@ footer .row {
   display: flex;
   justify-content: space-between;
   padding: 4rem 10rem;
+  gap: 3rem;
 }
 
 .footer-col ul {
   list-style: none;
+}
+
+.footer-col ul li{
+  font-size: 1.6rem;
 }
 
 .footer-col h4 {
@@ -502,6 +300,10 @@ footer .row {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   position: relative;
+}
+
+.footer-col h4:hover{
+  color: var(--main-color);
 }
 
 .footer-col h4::before {
@@ -550,7 +352,8 @@ footer .row {
 
 .col p {
   color: var(--white-color);
-  font-size: 2.5rem;
+  font-size: 1.6rem;
+  
 }
 
 .footer .col a {
@@ -564,6 +367,9 @@ footer .row {
 .row .social-icons {
   border-radius: 50%;
   margin-top: -1.4rem;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .row .social-icons i {
@@ -571,10 +377,11 @@ footer .row {
   padding: 0.8rem;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: var(--main-color);
   margin: 0 0.8rem;
   transition: 0.5s;
+  left: 7rem;
 }
 
 .row .social-icons i:hover {
@@ -591,8 +398,9 @@ footer .row {
 
 .row .col p a {
   color: var(--white-color);
-  margin-left: 3rem;
-  font-size: 2.5rem;
+  margin-left: 3.9rem;
+  font-size: 1.7rem;
+  margin-right: 2rem;
 }
 
 .row .col p a:hover {
@@ -604,18 +412,298 @@ footer .row {
   gap: 3rem;
 }
 
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 76.8rem) {
-  /* 768px */
-  .skill-name {
-    font-size: 1.3rem;
-  }
-  .circle {
-    width: 10rem; /* 100px */
-    height: 10rem;
-  }
-  .circle svg {
-    width: 10rem;
-    height: 10rem;
+/* ================= RESPONSIVE GLOBAL ================= */
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 58%;
   }
 }
+
+/* ================= MOBILE NAVBAR & HEADER ================= */
+
+@media (max-width: 900px) {
+
+  /* Header scrolls with page */
+  header {
+    position: relative;
+    padding: 2rem 5%;
+  }
+
+  /* Menu icon visible */
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+
+  /* Navbar vertical and hidden by default */
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column; /* vertical menu */
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 100;
+  }
+
+  /* Show menu when active */
+  nav.active {
+    max-height: 500px; /* enough for all links */
+  }
+
+  /* Navbar links styling */
+  nav a {
+    margin: 0;
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    border-top: 0.1rem solid var(--main-color);
+    transition: 0.3s;
+  }
+
+  nav a:first-child {
+    border-top: none;
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: var(--main-color);
+  }
+   /* FOOTER */
+  footer .row {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 4rem;
+  }
+  /* --- Base container adjustments for mobile --- */
+@media screen and (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .resume-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .resume-box h2.heading,
+  .resume-box h2 {
+    font-size: 3rem;
+  }
+
+  .resume-box .desc {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  /* Buttons stack vertically */
+  .resume-box .resume-btn {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 2.S4rem;
+    padding: 10px 0;
+  }
+
+  /* Resume list items stack */
+  .resume-detail .resume-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .resume-detail .resume-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-detail .resume-item p.year,
+  .resume-detail .resume-item h3,
+  .resume-detail .resume-item .company {
+    font-size: 2rem;
+  }
+
+  /* Skill bars adjust for smaller screens */
+  .resume-detail.skills .skill-bar {
+    width: 100%;
+  }
+
+  .resume-detail.skills .skill-percantage {
+    font-size: 2rem;
+  }
+
+  /* About Me list items stack */
+  .resume-detail.about .resume-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .resume-detail.about .resume-item p,
+  .resume-detail.about .resume-item span {
+    font-size: 0.85rem;
+  }
+}
+
+/* Optional: extra small phones */
+@media screen and (max-width: 480px) {
+  .resume-box h2.heading,
+  .resume-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .resume-box .desc {
+    font-size: 0.85rem;
+  }
+
+  .resume-box .resume-btn {
+    font-size: 0.85rem;
+    padding: 8px 0;
+  }
+}
+
+
+  .footer-col h4{
+    font-size: 4rem;
+  }
+
+  .footer-col ul li {
+    font-size: 3rem;
+  }
+
+  .footer-col ul li a {
+    font-size: 3rem;
+  }
+
+  .footer-col input {
+    width: 80%;
+    font-size: 3rem;
+  }
+  .row .col {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .row .col p {
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .row .col p a {
+    font-size: 3rem;
+    margin-left: 0;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons i {
+    font-size: 3rem;
+    margin: 0 1rem;
+  }
+}
+
+
+
+
+/* Language select styling */
+.lang-select {
+  appearance: none;          /* remove default arrow */
+  -webkit-appearance: none;  /* Safari/Chrome */
+  -moz-appearance: none;     /* Firefox */
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  font-size: 2.5rem;
+  padding: 0.8rem 2.5rem 0.8rem 1rem; /* extra right space for arrow */
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover & focus effects */
+.lang-select:hover,
+.lang-select:focus {
+  background-color: var(--second-bg-color);
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+/* Custom arrow using pseudo-element */
+.lang-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-select-wrapper::after {
+  content: "\25BC"; /* downward arrow */
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+
+/* Optional: small screens adjustment */
+@media (max-width: 900px) {
+  .lang-select {
+  appearance: none;          /* remove default arrow */
+  -webkit-appearance: none;  /* Safari/Chrome */
+  -moz-appearance: none;     /* Firefox */
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  font-size: 2.5rem;
+  padding: 0.8rem 2.5rem 0.8rem 1rem; /* extra right space for arrow */
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover & focus effects */
+.lang-select:hover,
+.lang-select:focus {
+  background-color: var(--second-bg-color);
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+/* Custom arrow using pseudo-element */
+.lang-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-select-wrapper::after {
+  content: "\25BC"; /* downward arrow */
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--main-color);
+  font-size: 2.5rem;
+
+  }
+}
+
+ 
+
+

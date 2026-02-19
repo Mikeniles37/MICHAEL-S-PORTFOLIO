@@ -1,233 +1,284 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael's Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <header>
-      <a href="#" class="logo">Michael</a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav>
-        <a href="home.html" class="active">Home</a>
-        <a href="services.html">Services</a>
-        <a href="resume.html">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+  <title>Michael Oscar - Web Developer Portfolio | Projects</title>
 
-    <!-- Portfolio section -->
-    <section class="portfolio active">
-      <h2 class="heading">Latest <span>Project</span></h2>
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Explore the portfolio of Michael Oscar, a Full-Stack Software Developer. Projects include modern web development using HTML, CSS, JavaScript, React, Node.js, and more.">
 
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <div class="portfolio-detail active">
-            <p class="numb">01</p>
-            <h3>Frontend Development</h3>
-            <p>
-              Developed a full-stack portfolio platform allowing content
-              management, multilanguage support, and responsiveness.
-            </p>
-            <div class="tech">
-              <p>HTML5, CSS, JavaScript, Node.js</p>
-              <div class="live-github">
-                <a href="#"><i class="bx bx-arrow-back"></i> Live Project</a>
-                <a href="#"><i class="bx bxl-github"></i> Live GitHub</a>
-              </div>
-            </div>
-          </div>
+  <!-- SEO Meta Keywords -->
+  <meta name="keywords" content="Michael Oscar, Portfolio, Web Developer, Full-Stack Developer, Frontend Projects, Backend Projects, React Projects, Node.js, JavaScript, HTML, CSS, Web Development">
 
-          <div class="portfolio-detail">
-            <p class="numb">02</p>
-            <h3>School Website Project</h3>
-            <p>
-              A modern school website with an admin system for managing content
-              without touching code.
-            </p>
-            <div class="tech">
-              <p>HTML5, CSS, JavaScript, Node.js + Express, MySQL</p>
-            </div>
-          </div>
+  <!-- Author -->
+  <meta name="author" content="Michael Oscar">
 
-          <div class="portfolio-detail">
-            <p class="numb">03</p>
-            <h3>Livescore Website / App</h3>
-            <p>
-              A real-time football livescore platform with live matches, scores,
-              fixtures, and tables.
-            </p>
-            <div class="tech">
-              <p>HTML5, CSS, JavaScript, Node.js + Express, API</p>
-            </div>
-          </div>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Michael Oscar - Web Developer Portfolio" />
+  <meta property="og:description" content="Explore the portfolio of Michael Oscar, a Full-Stack Software Developer. Projects include HTML, CSS, JavaScript, React, Node.js, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/portfolio.html" />
+  <meta property="og:image" content="https://yourdomain.com/images/portfolio-cover.jpg" />
 
-          <div class="portfolio-detail">
-            <p class="numb">04</p>
-            <h3>E-Commerce Website</h3>
-            <p>
-              A full-stack online store with product browsing, cart, and
-              checkout.
-            </p>
-            <div class="tech">
-              <p>HTML5, CSS, JavaScript, Node.js + Express, MySQL</p>
-            </div>
-          </div>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="portfolio.css" />
 
-          <div class="portfolio-detail">
-            <p class="numb">05</p>
-            <h3>School Management System</h3>
-            <p>
-              A complete web-based system for managing students, teachers,
-              attendance, results, and announcements.
-            </p>
-            <div class="tech">
-              <p>HTML5, CSS, JavaScript, Node.js + Express, MySQL, JWT</p>
-            </div>
-          </div>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-          <div class="portfolio-detail">
-            <p class="numb">06</p>
-            <h3>Weather Forecast App</h3>
-            <p>
-              A web app showing current weather, hourly forecast, and 7-day
-              forecast.
-            </p>
-            <div class="tech">
-              <p>HTML5, CSS, JavaScript, Weather API</p>
-            </div>
-          </div>
+  <!-- Schema.org Structured Data for Portfolio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Oscar",
+    "url": "https://yourdomain.com/portfolio.html",
+    "jobTitle": "Full-Stack Software Developer",
+    "image": "https://yourdomain.com/images/profile.jpg",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "hasPart": [
+      {
+        "@type": "CreativeWork",
+        "name": "Portfolio Project",
+        "url": "https://yourdomain.com/portfolio.html#project1",
+        "description": "Modern frontend project built using HTML, CSS, and JavaScript.",
+        "keywords": "HTML, CSS, JavaScript, Frontend"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Live Score App",
+        "url": "https://yourdomain.com/portfolio.html#project2",
+        "description": "Real-time live score application using JavaScript and APIs.",
+        "keywords": "JavaScript, APIs, Live Score"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "E-Commerce Website",
+        "url": "https://yourdomain.com/portfolio.html#project3",
+        "description": "Full E-Commerce website built with HTML, CSS, JS, and Node.js backend.",
+        "keywords": "E-Commerce, Node.js, JavaScript, HTML, CSS"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "School Website",
+        "url": "https://yourdomain.com/portfolio.html#project4",
+        "description": "School website with responsive design and modern web technologies.",
+        "keywords": "HTML, CSS, JavaScript, School Website"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<header>
+  <a href="#" class="logo"
+     data-en="Michael"
+     data-sw="Michael">Michael</a>
+
+  <i class="bx bx-menu" id="menu-icon"></i>
+
+  <nav>
+    <a href="home.html"
+       data-en="Home"
+       data-sw="Nyumbani">Home</a>
+
+    <a href="services.html"
+       data-en="Services"
+       data-sw="Huduma">Services</a>
+
+    <a href="resume.html"
+       data-en="Resume"
+       data-sw="Wasifu">Resume</a>
+
+    <a href="portfolio.html"
+       class="active"
+       data-en="Portfolio"
+       data-sw="Miradi">Portfolio</a>
+
+    <a href="contact.html"
+       data-en="Contact"
+       data-sw="Wasiliana">Contact</a>
+  </nav>
+
+  <select id="languageSelect" class="lang-select">
+    <option value="en">English</option>
+    <option value="sw">Kiswahili</option>
+  </select>
+</header>
+
+
+
+<section class="portfolio">
+  <h2 class="heading">Latest <span>Projects</span></h2>
+
+  <div class="portfolio-container">
+
+    <!-- LEFT SIDE -->
+    <div class="portfolio-detail">
+      <p class="numb">01</p>
+      <h3 id="project-title">Portfolio Project </h3>
+      <p id="project-desc">
+        Modern frontend project built using HTML, CSS and JavaScript.
+      </p>
+      <div class="tech" id="project-tech">
+        HTML5, CSS3, JavaScript
+      </div>
+      <div class="live-github">
+        <a href="#"><i class="bx bx-arrow-back"></i> <span>Live Project</span></a>
+        <a href="#"><i class="bx bxl-github"></i><span> GitHub Repository</span></a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="carousel-wrapper">
+
+      <div class="img-slide">
+
+        <div class="img-item active">
+          <img src="IMAGES/portfolio.png" />
         </div>
 
-        <!-- Portfolio images -->
-        <div class="portfolio-media">
-          <div class="portfolio-carousel">
-            <div class="img-slide">
-              <div class="img-item">
-                <img src="IMAGES/ecommerce.png" alt="E-commerce project" />
-              </div>
-              <div class="img-item">
-                <img src="IMAGES/livescore.png" alt="Livescore project" />
-              </div>
-              <div class="img-item">
-                <img src="IMAGES/portfolio.png" alt="Portfolio project" />
-              </div>
-              <div class="img-item">
-                <img
-                  src="IMAGES/schoolwebsite.png"
-                  alt="School website project"
-                />
-              </div>
-              <div class="img-item">
-                <img src="IMAGES/weather.jpeg" alt="Weather app project" />
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-nav">
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-          </div>
+        <div class="img-item">
+          <img src="IMAGES/livescore.png" />
         </div>
+
+        <div class="img-item">
+          <img src="IMAGES/ecommerce.png" />
+        </div>
+
+        <div class="img-item">
+          <img src="IMAGES/schoolwebsite.png" />
+        </div>
+
+      </div>
+ 
+      <div class="navigation">
+        <button class="arrow-left">
+          <i class='bx bx-chevron-left'></i>
+        </button>
+        <button class="arrow-right">
+          <i class='bx bx-chevron-right'></i>
+        </button>
       </div>
 
-      <script src="portfolio.js"></script>
-    </section>
+    </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+  </div>
+</section>
 
-          <div class="footer-col">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">SEO</a></li>
-              <li><a href="#">Backend Development</a></li>
-              <li><a href="#">Web Security</a></li>
-              <li><a href="#">Full-Stack Development</a></li>
-              <li><a href="#">Mobile Apps</a></li>
-              <li><a href="#">Design & Graphics</a></li>
-            </ul>
-          </div>
 
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul>
-              <li><i class="bx bxs-phone"></i> +255 691 368 141</li>
-              <li><i class="bx bxs-envelope"></i> mikeniles37@gmail.com</li>
-              <li><i class="bx bx-current-location"></i> Tanzania, Tarime</li>
-              <li>Availability: 8:00 AM – 10:00 PM</li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Newsletter</h4>
-            <form>
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Enter Your Email" />
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
+<!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4 data-en="Quick Links" data-sw="Viungo Haraka">Quick Links</h4>
+          <ul>
+            <li><a href="home.html" data-en="Home" data-sw="Nyumbani">Home</a></li>
+            <li><a href="services.html" data-en="Services" data-sw="Huduma">Services</a></li>
+            <li><a href="resume.html" data-en="Resume" data-sw="Wasifu">Resume</a></li>
+            <li><a href="portfolio.html" data-en="Portfolio" data-sw="Miradi">Portfolio</a></li>
+            <li><a href="contact.html" data-en="Contact" data-sw="Wasiliana">Contact</a></li>
+          </ul>
         </div>
 
-        <hr class="footer-line" />
+        <div class="footer-col">
+          <h4 data-en="Services" data-sw="Huduma">Services</h4>
+          <ul>
+            <li><a href="#" data-en="Web Design" data-sw="Ubunifu wa Wavuti">Web Design</a></li>
+            <li><a href="#" data-en="SEO" data-sw="SEO">SEO</a></li>
+            <li><a href="#" data-en="Backend Development" data-sw="Maendeleo ya Backend">Backend Development</a></li>
+            <li><a href="#" data-en="Web Security" data-sw="Usalama wa Wavuti">Web Security</a></li>
+            <li><a href="#" data-en="Full-Stack Development" data-sw="Maendeleo ya Full-Stack">Full-Stack Development</a></li>
+            <li><a href="#" data-en="Mobile Apps" data-sw="Programu za Simu">Mobile Apps</a></li>
+            <li><a href="#" data-en="Design & Graphics" data-sw="Ubunifu & Graphics">Design & Graphics</a></li>
+          </ul>
+        </div>
 
-        <div class="row">
-          <div class="col">
-            <p>© 2025 Michael. All Rights Reserved</p>
-            <p>
-              <a href="DOCUMENTS/privacy-policy.docx">Privacy Policy</a>
-            </p>
-            <p>
-              <a href="DOCUMENTS/terms-and-conditions.docx">
-                Terms & Conditions
-              </a>
-            </p>
-          </div>
+        <div class="footer-col">
+          <h4 data-en="Contact" data-sw="Wasiliana">Contact</h4>
+          <ul>
+            <li><a href="#"><i class="bx bxs-phone"></i> +255691368141</a></li>
+            <li><a href="#"><i class="bx bxs-envelope"></i> Mikeniles37@gmail.com</a></li>
+            <li><a href="#"><i class="bx bx-current-location"></i> Tanzania, Tarime</a></li>
+            <li><a href="#" data-en="Availability: 8:00 AM - 10:00 PM" data-sw="Upatikanaji: 8:00 AM - 10:00 PM">Availability: 8:00 AM - 10:00 PM</a></li>
+          </ul>
+        </div>
 
-          <div class="social-icons">
-            <a href="https://github.com/Mikeniles37"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a href="https://wa.me/255691368141"
-              ><i class="bx bxl-whatsapp"></i
-            ></a>
-            <a href="https://t.me/MichaelOdhiambo"
-              ><i class="bx bxl-telegram"></i
-            ></a>
-            <a href="https://www.instagram.com/mikeniles37/"
-              ><i class="bx bxl-instagram"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/mike-niles-459b873a9/"
-              ><i class="bx bxl-linkedin"></i
-            ></a>
-            <a href="https://www.youtube.com/@MikeNiles3708"
-              ><i class="bx bxl-youtube"></i
-            ></a>
-          </div>
+        <div class="footer-col">
+          <h4 data-en="Newsletter" data-sw="Jarida">Newsletter</h4>
+          <form>
+            <input type="text" placeholder="Your Name" data-en="Your Name" data-sw="Jina Lako" class="inputname" />
+            <input type="email" placeholder="Enter Your Email" data-en="Enter Your Email" data-sw="Weka Barua Pepe Yako" class="inputemail" />
+            <input type="submit" value="Submit" data-en="Submit" data-sw="Tuma" class="inputsubmit" />
+          </form>
         </div>
       </div>
-    </footer>
+      <hr class="footer-line" />
+      <div class="row">
+        <div class="col">
+          <p>&#169; 2025 Michael. All Rights Reserved</p>
+          <p><a href="DOCUMENTS/Privacy Policy-WPS Office.docx" data-en="Privacy Policy" data-sw="Sera ya Faragha">Privacy Policy</a></p>
+          <p><a href="DOCUMENTS/Terns and conditions .docx" data-en="Terms & Conditions" data-sw="Masharti & Masharti">Terms & Conditions</a></p>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/Mikeniles37"><i class="bx bxl-github"></i></a>
+          <a href="https://wa.me/+255691368141"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://t.me/Michae Odhiambo"><i class="bx bxl-telegram"></i></a>
+          <a href="https://www.instagram.com/mikeniles37/?hl=en"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mike-niles-459b873a9/"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.youtube.com/@MikeNiles3708"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- INLINE JS FOR TRANSLATION -->
+  <script>
+    const langSelect = document.getElementById("languageSelect");
+    langSelect.addEventListener("change", () => {
+      const lang = langSelect.value;
+      document.querySelectorAll("[data-en]").forEach(el => {
+        const text = lang === "sw" ? el.dataset.sw : el.dataset.en;
+        if(el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+          if(el.type === "submit") el.value = text;
+          else el.placeholder = text;
+        } else if(el.tagName === "OPTION") {
+          el.textContent = text;
+        } else {
+          el.textContent = text;
+        }
+      });
+    });
+  </script>
+  
+
+
+
+
+
+<script src="portfolio.js"></script>
+<script>
+  const menuIcon = document.getElementById("menu-icon");
+  const navbar = document.querySelector("nav");
+
+  menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+
+  // Close menu when a link is clicked (mobile UX)
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      navbar.classList.remove("active");
+    });
+  });
+</script>
+</body>
 </html>
