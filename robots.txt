@@ -1,0 +1,10 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Disallow:
+
+# Optional: block specific folders
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://mikeniles37.netlify.app./sitemap.xml
